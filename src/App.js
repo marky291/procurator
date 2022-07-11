@@ -14,7 +14,7 @@ function App() {
               <Nav />
           </div>
           <div className="sm:w-4/5 md:1/4 w-full flex-shrink flex-grow-0 p-4">
-            <main role="main" className="sticky flex-auto top-0 p-4 bg-gray-200 rounded-xl w-full h-full">
+            <main role="main" className="sticky flex-auto top-0 p-4 rounded-xl w-full h-full">
               <Paragraphs />
               <Sentences />
               <Words />
