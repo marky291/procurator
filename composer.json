@@ -6,13 +6,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "fakerphp/faker": "^1.9.1",
         "guzzlehttp/guzzle": "^7.2",
         "inertiajs/inertia-laravel": "^0.5.4",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^2.8",
+        "laravel/telescope": "^4.9",
         "laravel/tinker": "^2.7",
-        "tightenco/ziggy": "^1.0",
-        "fakerphp/faker": "^1.9.1"
+        "tightenco/ziggy": "^1.0"
     },
     "require-dev": {
         "laravel/breeze": "^1.10",
