@@ -112,8 +112,8 @@
                         <p class="mt-3 text-2xl tracking-tight text-slate-400">Cache every single thing your app could
                             ever do ahead of time, so your code never even has to run at all.</p>
                         <div class="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                            <x-primary-button url="/" name="Get started"/>
-                            <x-secondary-button url="/" name="View on GitHub"/>
+                            <x-button-primary url="/">Get started</x-button-primary>
+                            <x-button-secondary url="/">View on GitHub</x-button-secondary>
                         </div>
                     </div>
                 </div>
@@ -368,46 +368,7 @@
                     <p class="lead">Learn how to get CacheAdvance set up in your project in under thirty minutes or it's
                         free. </p>
                     <div class="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-                        <div class="group relative rounded-xl border border-slate-200 dark:border-slate-800">
-                            <div
-                                class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]"></div>
-                            <div class="relative overflow-hidden rounded-xl p-6">
-                                <svg aria-hidden="true" viewBox="0 0 32 32" fill="none"
-                                     class="h-8 w-8 [--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]">
-                                    <defs>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1h19n6:-gradient"
-                                                        gradientTransform="matrix(0 21 -21 0 12 3)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1h19n6:-gradient-dark"
-                                                        gradientTransform="matrix(0 21 -21 0 16 7)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                    </defs>
-                                    <g class="dark:hidden">
-                                        <circle cx="12" cy="12" r="12" fill="url(#:R1h19n6:-gradient)"></circle>
-                                        <path d="m8 8 9 21 2-10 10-2L8 8Z" fill-opacity="0.5"
-                                              class="fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]"
-                                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                    <g class="hidden dark:inline">
-                                        <path d="m4 4 10.286 24 2.285-11.429L28 14.286 4 4Z"
-                                              fill="url(#:R1h19n6:-gradient-dark)"
-                                              stroke="url(#:R1h19n6:-gradient-dark)" stroke-width="2"
-                                              stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                </svg>
-                                <h2 class="mt-4 font-display text-base text-slate-900 dark:text-white"><a href="/"><span
-                                            class="absolute -inset-px rounded-xl"></span>Installation</a></h2>
-                                <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">Step-by-step guides to
-                                    setting up your system and installing the library.</p></div>
-                        </div>
+                        <x-panel-action></x-panel-action>
                         <div class="group relative rounded-xl border border-slate-200 dark:border-slate-800">
                             <div
                                 class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]"></div>
@@ -579,10 +540,7 @@
                     <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
                         praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque
                         mollitia qui quia necessitatibus.</p>
-                    <pre class="prism-code language-shell"><code><span class="token function">npm</span><span
-                                class="token plain"> </span><span class="token function">install</span><span
-                                class="token plain"> @tailwindlabs/cache-advance</span>
-</code></pre>
+                    <x-panel></x-panel>
                     <p>Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga
                         eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
                         Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora
