@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class SentenceGenerator extends Component
+class GenerateSentence extends Component
 {
     public string $sentence;
 
@@ -20,6 +20,6 @@ class SentenceGenerator extends Component
 
     public function render()
     {
-        return view('livewire.sentence-generator');
+        return view('livewire.generate-sentence');
     }
 }

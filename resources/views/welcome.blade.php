@@ -536,7 +536,7 @@
                     <h2 id="quick-start">Sentence Generator</h2>
 
                     <x-panel>
-                        <livewire:sentence-generator/>
+                        <livewire:generate-sentence/>
                     </x-panel>
 
                     <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
