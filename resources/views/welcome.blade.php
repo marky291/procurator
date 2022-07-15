@@ -111,11 +111,10 @@
                             Never miss the cache again.</p>
                         <p class="mt-3 text-2xl tracking-tight text-slate-400">Cache every single thing your app could
                             ever do ahead of time, so your code never even has to run at all.</p>
-                        <div class="mt-8 flex gap-4 md:justify-center lg:justify-start"><a
-                                class="rounded-full bg-sky-300 py-2 px-4 text-sm font-semibold text-slate-900 hover:bg-sky-200 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300/50 active:bg-sky-500"
-                                href="/">Get started</a><a
-                                class="rounded-full bg-slate-800 py-2 px-4 text-sm font-medium text-white hover:bg-slate-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-slate-400"
-                                href="/">View on GitHub</a></div>
+                        <div class="mt-8 flex gap-4 md:justify-center lg:justify-start">
+                            <x-primary-button url="/" name="Get started"/>
+                            <x-secondary-button url="/" name="View on GitHub"/>
+                        </div>
                     </div>
                 </div>
                 <div class="relative lg:static xl:pl-10">
