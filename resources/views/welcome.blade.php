@@ -533,7 +533,12 @@
                     <p>Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga
                         eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.</p>
                     <hr>
-                    <h2 id="quick-start">Quick start</h2>
+                    <h2 id="quick-start">Sentence Generator</h2>
+
+                    <x-panel>
+                        <livewire:sentence-generator/>
+                    </x-panel>
+
                     <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
                         praesentium dolor error cumque velit tenetur.</p>
                     <h3 id="installing-dependencies">Installing dependencies</h3>
