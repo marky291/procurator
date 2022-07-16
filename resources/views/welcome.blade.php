@@ -535,6 +535,10 @@
                     <hr>
                     <h2 id="quick-start">Sentence Generator</h2>
 
+                    <!-- Target -->
+                    <input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
+
+                    <!-- Trigger -->
                     <x-panel>
                         <livewire:generate-sentence/>
                     </x-panel>
