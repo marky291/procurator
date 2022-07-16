@@ -539,6 +539,10 @@
                         <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
                     </x-forge>
 
+                    <x-forge component="forge-password">
+                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
+                    </x-forge>
+
                     <h3 id="installing-dependencies">Installing dependencies</h3>
                     <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
                         praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque

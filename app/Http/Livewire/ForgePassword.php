@@ -2,10 +2,10 @@
 
 namespace App\Http\Livewire;
 
-class ForgeSentence extends ForgeBase
+class ForgePassword extends ForgeBase
 {
     function forge(): string
     {
-        return fake()->sentence;
+        return fake()->password;
     }
 }
