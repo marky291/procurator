@@ -535,12 +535,10 @@
                     <hr>
                     <h2 id="quick-start">Sentence Generator</h2>
 
-                    <x-panel>
-                        <livewire:generate-sentence/>
-                    </x-panel>
+                    <x-forge component="forge-sentence">
+                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
+                    </x-forge>
 
-                    <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
-                        praesentium dolor error cumque velit tenetur.</p>
                     <h3 id="installing-dependencies">Installing dependencies</h3>
                     <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
                         praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque

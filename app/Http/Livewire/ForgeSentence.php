@@ -4,9 +4,12 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class GenerateSentence extends Component
+class ForgeSentence extends Component
 {
     public string $sentence;
+    public string $clipboardTarget;
+
+    protected $listeners = ['generate'];
 
     public function mount()
     {
@@ -20,6 +23,6 @@ class GenerateSentence extends Component
 
     public function render()
     {
-        return view('livewire.generate-sentence');
+        return view('livewire.forge-sentence');
     }
 }
