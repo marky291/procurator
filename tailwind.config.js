@@ -1,4 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,7 +9,6 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-
     darkMode: 'class',
     theme: {
         fontSize: {
@@ -34,6 +34,9 @@ module.exports = {
             maxWidth: {
                 '8xl': '88rem',
             },
+            colors: {
+                slate: colors.slate,
+            }
         },
     },
     plugins: [require('@tailwindcss/typography')],

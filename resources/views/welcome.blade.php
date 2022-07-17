@@ -360,188 +360,29 @@
         </div>
         <div class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
             <article>
-                <header class="mb-9 space-y-1"><p class="font-display text-sm font-medium text-sky-500">Introduction</p>
-                    <h1 class="font-display text-3xl tracking-tight text-slate-900 dark:text-white">Getting started</h1>
+                <header class="mb-9 space-y-1"><p class="font-display text-sm font-medium text-sky-500">Basics</p>
+                    <h1 class="font-display text-3xl tracking-tight text-slate-900 dark:text-white">Content Forge</h1>
                 </header>
                 <div
                     class="prose prose-slate max-w-none dark:prose-invert dark:text-slate-400 prose-headings:scroll-mt-28 prose-headings:font-display prose-headings:font-normal lg:prose-headings:scroll-mt-[8.5rem] prose-lead:text-slate-500 dark:prose-lead:text-slate-400 prose-a:font-semibold dark:prose-a:text-sky-400 prose-a:no-underline prose-a:shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,4px)+2px))_0_0_var(--tw-prose-underline,theme(colors.sky.300))] hover:prose-a:[--tw-prose-underline-size:6px] dark:[--tw-prose-background:theme(colors.slate.900)] dark:prose-a:shadow-[inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.sky.800))] dark:hover:prose-a:[--tw-prose-underline-size:6px] prose-pre:rounded-xl prose-pre:bg-slate-900 prose-pre:shadow-lg dark:prose-pre:bg-slate-800/60 dark:prose-pre:shadow-none dark:prose-pre:ring-1 dark:prose-pre:ring-slate-300/10 dark:prose-hr:border-slate-800">
-                    <p class="lead">Learn how to get CacheAdvance set up in your project in under thirty minutes or it's
-                        free. </p>
-                    <div class="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-                        <x-panel-action></x-panel-action>
-                        <div class="group relative rounded-xl border border-slate-200 dark:border-slate-800">
-                            <div
-                                class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]"></div>
-                            <div class="relative overflow-hidden rounded-xl p-6">
-                                <svg aria-hidden="true" viewBox="0 0 32 32" fill="none"
-                                     class="h-8 w-8 [--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]">
-                                    <defs>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1i19n6:-gradient"
-                                                        gradientTransform="matrix(0 21 -21 0 20 3)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1i19n6:-gradient-dark"
-                                                        gradientTransform="matrix(0 22.75 -22.75 0 16 6.25)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                    </defs>
-                                    <g class="dark:hidden">
-                                        <circle cx="20" cy="12" r="12" fill="url(#:R1i19n6:-gradient)"></circle>
-                                        <g class="fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]"
-                                           fill-opacity="0.5" stroke-width="2" stroke-linecap="round"
-                                           stroke-linejoin="round">
-                                            <path
-                                                d="M3 5v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"></path>
-                                            <path
-                                                d="M18 17v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V17a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2Z"></path>
-                                            <path
-                                                d="M18 5v4a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2Z"></path>
-                                            <path
-                                                d="M3 25v2a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"></path>
-                                        </g>
-                                    </g>
-                                    <g class="hidden dark:inline" fill="url(#:R1i19n6:-gradient-dark)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M3 17V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm16 10v-9a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2Zm0-23v5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1ZM3 28v-3a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"></path>
-                                        <path
-                                            d="M2 4v13h2V4H2Zm2-2a2 2 0 0 0-2 2h2V2Zm8 0H4v2h8V2Zm2 2a2 2 0 0 0-2-2v2h2Zm0 13V4h-2v13h2Zm-2 2a2 2 0 0 0 2-2h-2v2Zm-8 0h8v-2H4v2Zm-2-2a2 2 0 0 0 2 2v-2H2Zm16 1v9h2v-9h-2Zm3-3a3 3 0 0 0-3 3h2a1 1 0 0 1 1-1v-2Zm6 0h-6v2h6v-2Zm3 3a3 3 0 0 0-3-3v2a1 1 0 0 1 1 1h2Zm0 9v-9h-2v9h2Zm-3 3a3 3 0 0 0 3-3h-2a1 1 0 0 1-1 1v2Zm-6 0h6v-2h-6v2Zm-3-3a3 3 0 0 0 3 3v-2a1 1 0 0 1-1-1h-2Zm2-18V4h-2v5h2Zm0 0h-2a2 2 0 0 0 2 2V9Zm8 0h-8v2h8V9Zm0 0v2a2 2 0 0 0 2-2h-2Zm0-5v5h2V4h-2Zm0 0h2a2 2 0 0 0-2-2v2Zm-8 0h8V2h-8v2Zm0 0V2a2 2 0 0 0-2 2h2ZM2 25v3h2v-3H2Zm2-2a2 2 0 0 0-2 2h2v-2Zm9 0H4v2h9v-2Zm2 2a2 2 0 0 0-2-2v2h2Zm0 3v-3h-2v3h2Zm-2 2a2 2 0 0 0 2-2h-2v2Zm-9 0h9v-2H4v2Zm-2-2a2 2 0 0 0 2 2v-2H2Z"></path>
-                                    </g>
-                                </svg>
-                                <h2 class="mt-4 font-display text-base text-slate-900 dark:text-white"><a href="/"><span
-                                            class="absolute -inset-px rounded-xl"></span>Architecture guide</a></h2>
-                                <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">Learn how the internals work
-                                    and contribute.</p></div>
-                        </div>
-                        <div class="group relative rounded-xl border border-slate-200 dark:border-slate-800">
-                            <div
-                                class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]"></div>
-                            <div class="relative overflow-hidden rounded-xl p-6">
-                                <svg aria-hidden="true" viewBox="0 0 32 32" fill="none"
-                                     class="h-8 w-8 [--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]">
-                                    <defs>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1j19n6:-gradient"
-                                                        gradientTransform="matrix(0 21 -21 0 20 11)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1j19n6:-gradient-dark-1"
-                                                        gradientTransform="matrix(0 22.75 -22.75 0 16 6.25)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1j19n6:-gradient-dark-2"
-                                                        gradientTransform="matrix(0 14 -14 0 16 10)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                    </defs>
-                                    <g class="dark:hidden">
-                                        <circle cx="20" cy="20" r="12" fill="url(#:R1j19n6:-gradient)"></circle>
-                                        <g fill-opacity="0.5"
-                                           class="fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]"
-                                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M3 9v14l12 6V15L3 9Z"></path>
-                                            <path d="M27 9v14l-12 6V15l12-6Z"></path>
-                                        </g>
-                                        <path d="M11 4h8v2l6 3-10 6L5 9l6-3V4Z" fill-opacity="0.5"
-                                              class="fill-[var(--icon-background)]"></path>
-                                        <g class="stroke-[color:var(--icon-foreground)]" stroke-width="2"
-                                           stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M20 5.5 27 9l-12 6L3 9l7-3.5"></path>
-                                            <path
-                                                d="M20 5c0 1.105-2.239 2-5 2s-5-.895-5-2m10 0c0-1.105-2.239-2-5-2s-5 .895-5 2m10 0v3c0 1.105-2.239 2-5 2s-5-.895-5-2V5"></path>
-                                        </g>
-                                    </g>
-                                    <g class="hidden dark:inline" stroke-width="2" stroke-linecap="round"
-                                       stroke-linejoin="round">
-                                        <path
-                                            d="M17.676 3.38a3.887 3.887 0 0 0-3.352 0l-9 4.288C3.907 8.342 3 9.806 3 11.416v9.168c0 1.61.907 3.073 2.324 3.748l9 4.288a3.887 3.887 0 0 0 3.352 0l9-4.288C28.093 23.657 29 22.194 29 20.584v-9.168c0-1.61-.907-3.074-2.324-3.748l-9-4.288Z"
-                                            stroke="url(#:R1j19n6:-gradient-dark-1)"></path>
-                                        <path
-                                            d="M16.406 8.087a.989.989 0 0 0-.812 0l-7 3.598A1.012 1.012 0 0 0 8 12.61v6.78c0 .4.233.762.594.925l7 3.598a.989.989 0 0 0 .812 0l7-3.598c.361-.163.594-.525.594-.925v-6.78c0-.4-.233-.762-.594-.925l-7-3.598Z"
-                                            fill="url(#:R1j19n6:-gradient-dark-2)"
-                                            stroke="url(#:R1j19n6:-gradient-dark-2)"></path>
-                                    </g>
-                                </svg>
-                                <h2 class="mt-4 font-display text-base text-slate-900 dark:text-white"><a href="/"><span
-                                            class="absolute -inset-px rounded-xl"></span>Plugins</a></h2>
-                                <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">Extend the library with
-                                    third-party plugins or write your own.</p></div>
-                        </div>
-                        <div class="group relative rounded-xl border border-slate-200 dark:border-slate-800">
-                            <div
-                                class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]"></div>
-                            <div class="relative overflow-hidden rounded-xl p-6">
-                                <svg aria-hidden="true" viewBox="0 0 32 32" fill="none"
-                                     class="h-8 w-8 [--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]">
-                                    <defs>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1k19n6:-gradient"
-                                                        gradientTransform="matrix(0 21 -21 0 12 11)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                        <radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                                                        id=":R1k19n6:-gradient-dark"
-                                                        gradientTransform="matrix(0 24.5 -24.5 0 16 5.5)">
-                                            <stop stop-color="#0EA5E9"></stop>
-                                            <stop stop-color="#22D3EE" offset=".527"></stop>
-                                            <stop stop-color="#818CF8" offset="1"></stop>
-                                        </radialGradient>
-                                    </defs>
-                                    <g class="dark:hidden">
-                                        <circle cx="12" cy="20" r="12" fill="url(#:R1k19n6:-gradient)"></circle>
-                                        <path d="M27 12.13 19.87 5 13 11.87v14.26l14-14Z"
-                                              class="fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]"
-                                              fill-opacity="0.5" stroke-width="2" stroke-linecap="round"
-                                              stroke-linejoin="round"></path>
-                                        <path d="M3 3h10v22a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V3Z"
-                                              class="fill-[var(--icon-background)]" fill-opacity="0.5"></path>
-                                        <path
-                                            d="M3 9v16a4 4 0 0 0 4 4h2a4 4 0 0 0 4-4V9M3 9V3h10v6M3 9h10M3 15h10M3 21h10"
-                                            class="stroke-[color:var(--icon-foreground)]" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M29 29V19h-8.5L13 26c0 1.5-2.5 3-5 3h21Z" fill-opacity="0.5"
-                                              class="fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]"
-                                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                    <g class="hidden dark:inline">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M3 2a1 1 0 0 0-1 1v21a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H3Zm16.752 3.293a1 1 0 0 0-1.593.244l-1.045 2A1 1 0 0 0 17 8v13a1 1 0 0 0 1.71.705l7.999-8.045a1 1 0 0 0-.002-1.412l-6.955-6.955ZM26 18a1 1 0 0 0-.707.293l-10 10A1 1 0 0 0 16 30h13a1 1 0 0 0 1-1V19a1 1 0 0 0-1-1h-3ZM5 18a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H5Zm-1-5a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Zm1-7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H5Z"
-                                              fill="url(#:R1k19n6:-gradient-dark)"></path>
-                                    </g>
-                                </svg>
-                                <h2 class="mt-4 font-display text-base text-slate-900 dark:text-white"><a href="/"><span
-                                            class="absolute -inset-px rounded-xl"></span>API reference</a></h2>
-                                <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">Learn to easily customize and
-                                    modify your app's visual design to fit your brand.</p></div>
-                        </div>
-                    </div>
-                    <p>Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga
-                        eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.</p>
-                    <hr>
-                    <h2 id="quick-start">Sentence Generator</h2>
 
                     <x-forge component="forge-sentence">
                         <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
                     </x-forge>
 
+                    <hr>
+
                     <x-forge component="forge-password">
                         <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
                     </x-forge>
+
+                    <hr>
+
+                    <x-forge component="forge-paragraph">
+                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
+                    </x-forge>
+
+                    <hr>
 
                     <h3 id="installing-dependencies">Installing dependencies</h3>
                     <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
@@ -659,13 +500,15 @@
                                                                        class="font-display text-sm font-medium text-slate-900 dark:text-white">
                     On this page</h2>
                 <ol role="list" class="mt-4 space-y-3 text-sm">
-                    <li><h3><a class="text-sky-500" href="/#quick-start">Quick start</a></h3>
-                        <ol role="list" class="mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400">
-                            <li><a class="hover:text-slate-600 dark:hover:text-slate-300"
-                                   href="/#installing-dependencies">Installing dependencies</a></li>
-                            <li><a class="hover:text-slate-600 dark:hover:text-slate-300"
-                                   href="/#configuring-the-library">Configuring the library</a></li>
-                        </ol>
+                    <li>
+                        <h3>
+                            <a class="text-sky-500" href="/#link-forge-sentence">Forge Sentence</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a class="text-sky-500" href="/#link-forge-password">Forge Password</a>
+                        </h3>x
                     </li>
                     <li><h3>
                             <a class="font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300"

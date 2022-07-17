@@ -37,6 +37,6 @@ abstract class ForgeBase extends Component
 
     public function render(): View
     {
-        return view("livewire.{$this->componentView()}");
+        return view("components.forge-output");
     }
 }
