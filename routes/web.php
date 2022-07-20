@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -26,3 +22,16 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+Route::view('/', 'welcome')->name('welcome');
+
+// Content...
+Route::view('/basics/content', 'welcome')->name('basics.content');
+Route::view('/basics/content#forge-sentence', 'welcome')->name('basics.content.sentence');
+Route::view('/basics/content#forge-paragraph', 'welcome')->name('basics.content.paragraph');
+Route::view('/basics/content#forge-password', 'welcome')->name('basics.content.password');
+
+// Cards...
+Route::view('/basics/cards', 'welcome')->name('cards');
+Route::view('/basics/cards/secure', 'welcome')->name('cards.secure');
