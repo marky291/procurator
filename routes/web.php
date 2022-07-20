@@ -23,7 +23,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
-
+// Generic route
 Route::view('/', 'welcome')->name('welcome');
 
 // Content...
