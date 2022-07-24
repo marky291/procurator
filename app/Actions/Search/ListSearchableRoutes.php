@@ -13,7 +13,7 @@ class ListSearchableRoutes
      * List all routes that are searchable from the web.php routes file.
      */
     protected $sections = [
-        'basics',
+        'generators',
     ];
 
     /**
