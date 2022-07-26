@@ -10,8 +10,20 @@ class Search extends Component
     public $message;
     public Collection $results;
 
+    public $showSearchModal = false;
+    public $search = '';
+    public $searchResults = [];
+
     public function mount(){
         $this->results = new Collection;
+    }
+
+    public function showSearch(){
+        $this->showSearchModal = true;
+    }
+
+    public function closeSearchModal(){
+        $this->showSearchModal = false;
     }
 
     public function search(){
