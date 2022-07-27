@@ -7,15 +7,22 @@ use Livewire\Component;
 
 class Search extends Component
 {
+    public $testUrlResult;
     public $message;
     public Collection $results;
+    public Collection $urls;
+    public $jsonUrlData;
 
     public $showSearchModal = false;
-    public $search = '';
-    public $searchResults = [];
 
     public function mount(){
         $this->results = new Collection;
+        $this->urls = new Collection;
+        $this-> jsonUrlData = json_decode(file_get_contents(storage_path() . "/siteUrls.json"), true);
+
+        foreach ($this->jsonUrlData["urls"] as $url){
+            $this->urls->push($url);
+        }
     }
 
     public function showSearch(){
@@ -28,10 +35,17 @@ class Search extends Component
 
     public function search(){
         $this->results->push($this->message);
+        $this->checkMessagePresent();
     }
 
     public function updatedMessage(){
         $this->search();
+    }
+
+    public function checkMessagePresent(){
+        $this->testUrlResult = $this->urls->filter(function($url){
+            return $url;
+        });
     }
 
     public function render()
