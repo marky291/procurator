@@ -17,31 +17,37 @@
             <svg aria-hidden="true" viewBox="0 0 20 20" class="w-5 flex-none fill-slate-400 group-hover:fill-slate-500 dark:fill-slate-500 md:group-hover:fill-slate-400">
                 <path d="M16.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM9 14a5 5 0 0 1-5-5H2a7 7 0 0 0 7 7v-2ZM4 9a5 5 0 0 1 5-5V2a7 7 0 0 0-7 7h2Zm5-5a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7v2Zm8.707 12.293-3.757-3.757-1.414 1.414 3.757 3.757 1.414-1.414ZM14 9a4.98 4.98 0 0 1-1.464 3.536l1.414 1.414A6.98 6.98 0 0 0 16 9h-2Zm-1.464 3.536A4.98 4.98 0 0 1 9 14v2a6.98 6.98 0 0 0 4.95-2.05l-1.414-1.414Z"></path>
             </svg>
-            <input type="text" class="rounded-md w-full ml-3 mr-3 outline-none text-white bg-slate-800" placeholder="Search docs" wire:model="message">
+            <input type="text" class="rounded-md w-full ml-3 mr-3 outline-none text-white bg-slate-800" placeholder="Search docs" wire:model="query">
             <button class="bg-cancel-esc-btn text-[0] appearance-none flex-none rounded-md p-1 shadow-sm w-7 h-6 bg-[center_50%] bg-no-repeat bg-auto bg-[#475569]"
                 type="reset" aria-label="Cancel" wire:click="closeSearchModal">Cancel</button>
         </x-slot>
         <x-slot name="content">
                 <div class="w-full">
-                    @if (!empty($message))
-                        @foreach($testUrlResult as $testUrl)
-                            <div class="w-full p-2 m-2 rounded-md bg-slate-900 hover:bg-slate-500 cursor-pointer">
-                                @if(!@empty($testUrl["tags"]))
-                                    <div class="pl-4 pb-3">
-                                        @foreach($testUrl["tags"] as $urlTag)
-                                            <button class="rounded-xl py-1 px-2 flex-1 text-sm font-semibold text-slate-900 bg-sky-900"
-                                            aria-label="tag name">{{ $urlTag["name"] }}</button>
-                                        @endforeach
+                    @if($query)
+                        @if (count($results))
+                            @foreach($results as $testUrl)
+                                <a href="{{ url($testUrl['url']) }}">
+                                    <div class="w-full p-2 m-2 rounded-md bg-slate-900 hover:bg-slate-500 cursor-pointer">
+                                        @if(!@empty($testUrl["tags"]))
+                                            <div class="pl-4 pb-3">
+                                                @foreach($testUrl["tags"] as $urlTag)
+                                                    <button class="rounded-xl py-1 px-2 flex-1 text-sm font-semibold text-slate-900 bg-sky-900"
+                                                            aria-label="tag name">{{ $urlTag["name"] }}</button>
+                                                @endforeach
+                                            </div>
+                                        @endempty
+                                        <h1 class="text-white">{{ $testUrl["name"] }}</h1>
+                                        <div>
+                                            <h2 class="text-gray-400">{{ $testUrl["desc"] }}</h2>
+                                        </div>
                                     </div>
-                                @endempty
-                                <h1 class="text-white">{{ $testUrl["name"] }}</h1>
-                                <div>
-                                    <h2 class="text-gray-400">{{ $testUrl["desc"] }}</h2>
-                                </div>
-                            </div>
-                        @endforeach
+                                </a>
+                            @endforeach
+                        @else
+                            <div class="text-white">No Search Results</div>
+                        @endif
                     @else
-                        <div class="text-white">No Search Results</div>
+                        <div class="text-white">Start typing to search...</div>
                     @endif
                 </div>
         </x-slot>

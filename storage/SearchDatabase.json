@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Generate Sentence",
+        "tags": [
+        ],
+        "desc": "Generate a random sentence.",
+        "url": "#link-forge-sentence"
+    },
+    {
+        "name": "Generate Password",
+        "tags": [
+        ],
+        "desc": "Generate a random Password.",
+        "url": "#link-forge-password"
+    },
+    {
+        "name": "Generate Paragraph",
+        "tags": [
+        ],
+        "desc": "Generate a random sentence.",
+        "url": "#link-forge-paragraph"
+    }
+]
