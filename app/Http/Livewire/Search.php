@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class Search extends Component
 {
-    public bool $showSearchModal = true;
+    public bool $showSearchModal = false;
     public Collection $routes;
     public Collection $results;
     public string $query = "";
