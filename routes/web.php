@@ -16,16 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
-    'verified'
+    'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
 });
 
-Route::get('/test', function() {
+Route::get('/test', function () {
     $routes = new \App\Actions\Search\ListSearchableRoutes();
     $navigs = new \App\Actions\Search\MapRoutesToNavigation();
+
     return $navigs->navigationFromRoutes($routes->List());
 });
 

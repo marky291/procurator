@@ -14,7 +14,7 @@ class Navigation extends Component
         $mapper = new MapRoutesToNavigation();
 
         return view('livewire.navigation', [
-            'navigation' => $mapper->navigationFromRoutes($routes->List())
+            'navigation' => $mapper->navigationFromRoutes($routes->List()),
         ]);
     }
 }

@@ -4,8 +4,8 @@ namespace App\Actions\Search;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 
 class ListSearchableRoutes
 {
@@ -28,4 +28,3 @@ class ListSearchableRoutes
         });
     }
 }
-
