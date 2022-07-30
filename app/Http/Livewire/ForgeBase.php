@@ -4,12 +4,13 @@ namespace App\Http\Livewire;
 
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
-use Str;
+use Illuminate\Support\Str;
 
 abstract class ForgeBase extends Component
 {
     public string $forged;
     public string $clipboardTarget;
+    public bool $viewImage;
 
     protected $baseListeners = ['generate'];
 
@@ -22,6 +23,9 @@ abstract class ForgeBase extends Component
 
     public function mount()
     {
+        if($this->clipboardTarget == 'forge-avatar')
+            $this->viewImage = true;
+
         $this->forged = $this->forge();
     }
 

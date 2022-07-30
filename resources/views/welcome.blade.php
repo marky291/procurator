@@ -373,6 +373,12 @@
 
                     <hr>
 
+                    <x-forge component="forge-avatar">
+                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
+                    </x-forge>
+
+                    <hr>
+
                     <h3 id="installing-dependencies">Installing dependencies</h3>
                     <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
                         praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque
@@ -497,7 +503,17 @@
                     <li>
                         <h3>
                             <a class="text-sky-500" href="/#link-forge-password">Forge Password</a>
-                        </h3>x
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a class="text-sky-500" href="/#link-forge-paragraph">Forge Paragraph</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a class="text-sky-500" href="/#link-forge-avatar">Forge Avatar</a>
+                        </h3>
                     </li>
                     <li><h3>
                             <a class="font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300"
