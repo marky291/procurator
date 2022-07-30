@@ -34,6 +34,10 @@ pre[class*='language-'] {
     color: theme('colors.slate.50');
 }
 
+.custom-prose.lg\:prose-headings\:scroll-mt-\[8\.5rem\] :is(:where(div, h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"] *))) {
+    scroll-margin-top: 8.5rem;
+}
+
 .token.tag,
 .token.class-name,
 .token.selector,
