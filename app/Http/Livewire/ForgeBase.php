@@ -11,8 +11,9 @@ abstract class ForgeBase extends Component
     public string $forged;
     public string $clipboardTarget;
     public bool $viewImage;
+    private string $data;
 
-    protected $baseListeners = ['generate'];
+    protected $baseListeners = ['generate', 'generatePNG'];
 
     abstract function forge(): string;
 
@@ -32,6 +33,17 @@ abstract class ForgeBase extends Component
     public function generate()
     {
         $this->forged = $this->forge();
+    }
+
+    public function generatePNG()
+    {
+        $base64 = $this->forged;
+        $base64 = str_replace('data:image/png;base64,', '', $base64);
+        $base64 = str_replace(' ', '+', $base64);
+        $this->data = base64_decode($base64);
+        return response()->streamDownload(function () {
+            echo $this->data;
+        }, 'Avatar.png');
     }
 
     protected function componentView(): string
