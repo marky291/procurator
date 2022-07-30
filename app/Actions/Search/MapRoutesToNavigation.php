@@ -11,20 +11,19 @@ class MapRoutesToNavigation
     {
         $parseNavigation = new Collection;
 
-        $sections = $routes->filter(function($route) {
+        $sections = $routes->filter(function ($route) {
             return count(Str::of($route->uri)->explode('/')) == 1;
         });
 
-        foreach ($sections as $section)
-        {
+        foreach ($sections as $section) {
             $parsedSubNavigation = collect();
 
-            $navigation = $routes->filter(function($route) use ($section) {
-                return !Str::of($route->uri)->contains('#') && Str::of($route->uri)->contains($section->uri) && count(Str::of($route->uri)->explode('/')) == 2;
+            $navigation = $routes->filter(function ($route) use ($section) {
+                return ! Str::of($route->uri)->contains('#') && Str::of($route->uri)->contains($section->uri) && count(Str::of($route->uri)->explode('/')) == 2;
             });
 
             foreach ($navigation as $menu) {
-                $parsedSubNavigation->put($menu->uri, $routes->filter(function($route) use ($section, $menu) {
+                $parsedSubNavigation->put($menu->uri, $routes->filter(function ($route) use ($section, $menu) {
                     return Str::of($route->uri)->contains('#') && Str::of($route->uri)->contains([$section->uri, $menu->uri]) && count(Str::of($route->uri)->explode('/')) == 2;
                 }));
             }

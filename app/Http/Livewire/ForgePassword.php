@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 class ForgePassword extends ForgeBase
 {
-    function forge(): string
+    public function forge(): string
     {
         return fake()->password;
     }

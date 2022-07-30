@@ -9,11 +9,15 @@ use Livewire\Component;
 class Search extends Component
 {
     public bool $showSearchModal = false;
-    public Collection $routes;
-    public Collection $results;
-    public string $query = "";
 
-    public function mount(){
+    public Collection $routes;
+
+    public Collection $results;
+
+    public string $query = '';
+
+    public function mount()
+    {
         $this->results = collect();
         $this->routes = collect(json_decode(file_get_contents(storage_path('SearchDatabase.json')), true));
     }
@@ -28,36 +32,41 @@ class Search extends Component
      */
     public function updatedQuery()
     {
-        $this->results = $this->routes->filter(function($route) {
+        $this->results = $this->routes->filter(function ($route) {
             return Str::of($route['name'])->lower()->is(strtolower("*{$this->query}*"));
         });
     }
 
-    public function showSearch(){
+    public function showSearch()
+    {
         $this->showSearchModal = true;
     }
 
-    public function closeSearchModal(){
+    public function closeSearchModal()
+    {
         $this->showSearchModal = false;
     }
 
-    public function search(){
+    public function search()
+    {
         $this->results->push($this->message);
         $this->checkMessagePresent();
     }
 
-    public function updatedMessage(){
+    public function updatedMessage()
+    {
         $this->search();
     }
 
-    public function checkMessagePresent(){
-        $this->testUrlResult = $this->urls->filter(function($url){
+    public function checkMessagePresent()
+    {
+        $this->testUrlResult = $this->urls->filter(function ($url) {
             return $url;
         });
     }
 
     public function render()
     {
-        return view("components.search");
+        return view('components.search');
     }
 }
