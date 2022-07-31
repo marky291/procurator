@@ -298,6 +298,12 @@
                     <x-forge component="forge-avatar">
                         <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
                     </x-forge>
+
+                    <hr>
+
+                    <x-forge component="forge-cat">
+                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
+                    </x-forge>
                 </div>
             </article>
             <dl class="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
@@ -333,6 +339,11 @@
                     <li>
                         <h3>
                             <a class="text-sky-500" href="/#link-forge-avatar">Forge Avatar</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a class="text-sky-500" href="/#link-forge-cat">Forge Cat</a>
                         </h3>
                     </li>
                 </ol>
