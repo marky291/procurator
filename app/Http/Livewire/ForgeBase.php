@@ -25,7 +25,7 @@ abstract class ForgeBase extends Component
 
     public function mount()
     {
-        if ($this->clipboardTarget == 'forge-avatar') {
+        if ($this->clipboardTarget == 'forge-avatar' || $this->clipboardTarget == 'forge-cat') {
             $this->viewImage = true;
         }
 

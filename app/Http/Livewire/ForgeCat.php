@@ -2,12 +2,26 @@
 
 namespace App\Http\Livewire;
 
-use Laravolt\Avatar\Facade as Avatar;
+use Intervention\Image\ImageManagerStatic as Image;
 
 class ForgeCat extends ForgeBase
 {
+    private string $data;
+
     public function forge(): string
     {
-        return Avatar::create(fake()->name())->toBase64();
+        return (string) Image::make('https://cataas.com/cat?width=500')->encode('data-url');
+    }
+
+    public function generatePNG()
+    {
+        $base64 = $this->forged;
+        $base64 = str_replace(['data:image/jpeg;base64,', 'data:image/png;base64,'], '', $base64);
+        $base64 = str_replace(' ', '+', $base64);
+        $this->data = base64_decode($base64);
+
+        return response()->streamDownload(function () {
+            echo $this->data;
+        }, 'Cat.png');
     }
 }

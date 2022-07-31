@@ -26,6 +26,11 @@
             @if ($component == "forge-avatar" || $component == "forge-cat")
                 <button class="clipboard px-3 py-1 start rounded-full border border-gray-700 flex text-sm items-center justify-center text-gray-700 dark:text-gray-300" onclick="window.livewire.emitTo('{{ $component }}', 'generatePNG')">Download PNG</button>
                 <button class="clipboard px-3 py-1 rounded-full border border-gray-700 flex text-sm items-center justify-center text-gray-700 dark:text-gray-300" data-clipboard-target="#{{ $component }}">Copy Base64</button>
+            @elseif ($component == "forge-cat")
+                <div>
+                    enter height
+                    <input/>
+                </div>
             @else
                 <button class="clipboard px-3 py-1 rounded-full border border-gray-700 flex text-sm items-center justify-center text-gray-700 dark:text-gray-300" data-clipboard-target="#{{ $component }}">Copy Sentence</button>
             @endif
