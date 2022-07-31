@@ -12,11 +12,6 @@ abstract class ForgeBase extends Component
 
     abstract public function forge(): string;
 
-    protected function getListeners()
-    {
-        return array_merge($this->listeners, $this->baseListeners);
-    }
-
     // generate on page load.
     public function mount()
     {
