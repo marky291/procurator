@@ -257,90 +257,12 @@
                 <div class="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block"></div>
                 <nav class="text-base lg:text-sm w-64 pr-8 xl:w-72 xl:pr-16">
                     <ul role="list" class="space-y-9">
-                        <li><h2 class="font-display font-medium text-slate-900 dark:text-white">Introduction</h2>
+                        <li><h2 class="font-display font-medium text-slate-900 dark:text-white">Generator</h2>
                             <ul role="list"
                                 class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
                                 <li class="relative"><a
                                         class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
-                                        href="/">Getting started</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/installation">Installation</a></li>
-                            </ul>
-                        </li>
-                        <li><h2 class="font-display font-medium text-slate-900 dark:text-white">Core concepts</h2>
-                            <ul role="list"
-                                class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/understanding-caching">Understanding caching</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/predicting-user-behavior">Predicting user behavior</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/basics-of-time-travel">Basics of time-travel</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/introduction-to-string-theory">Introduction to string theory</a>
-                                </li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/the-butterfly-effect">The butterfly effect</a></li>
-                            </ul>
-                        </li>
-                        <li><h2 class="font-display font-medium text-slate-900 dark:text-white">Advanced guides</h2>
-                            <ul role="list"
-                                class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/writing-plugins">Writing plugins</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/neuralink-integration">Neuralink integration</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/temporal-paradoxes">Temporal paradoxes</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/testing">Testing</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/compile-time-caching">Compile-time caching</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/predictive-data-generation">Predictive data generation</a></li>
-                            </ul>
-                        </li>
-                        <li><h2 class="font-display font-medium text-slate-900 dark:text-white">API reference</h2>
-                            <ul role="list"
-                                class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/cacheadvance-predict">CacheAdvance.predict()</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/cacheadvance-flush">CacheAdvance.flush()</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/cacheadvance-revert">CacheAdvance.revert()</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/cacheadvance-regret">CacheAdvance.regret()</a></li>
-                            </ul>
-                        </li>
-                        <li><h2 class="font-display font-medium text-slate-900 dark:text-white">Contributing</h2>
-                            <ul role="list"
-                                class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/how-to-contribute">How to contribute</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/architecture-guide">Architecture guide</a></li>
-                                <li class="relative"><a
-                                        class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
-                                        href="/docs/design-principles">Design principles</a></li>
+                                        href="/">Content</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -376,109 +298,7 @@
                     <x-forge component="forge-avatar">
                         <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
                     </x-forge>
-
-                    <hr>
-
-                    <h3 id="installing-dependencies">Installing dependencies</h3>
-                    <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
-                        praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque
-                        mollitia qui quia necessitatibus.</p>
-                    <x-panel></x-panel>
-                    <p>Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga
-                        eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
-                        Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora
-                        cupiditate est quod.</p>
-                    <x-alert-warning></x-alert-warning>
-                    <h3 id="configuring-the-library">Configuring the library</h3>
-                    <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa
-                        praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque
-                        mollitia qui quia necessitatibus.</p>
-                    <pre class="prism-code language-js"><code><span
-                                class="token comment">// cache-advance.config.js</span><span class="token plain"></span>
-<span class="token plain"></span><span class="token keyword module">export</span><span class="token plain"> </span><span
-                                class="token keyword module">default</span><span class="token plain"> </span><span
-                                class="token punctuation">{</span><span class="token plain"></span>
-<span class="token plain">  </span><span class="token literal-property property">strategy</span><span
-                                class="token operator">:</span><span class="token plain"> </span><span
-                                class="token string">'predictive'</span><span class="token punctuation">,</span><span
-                                class="token plain"></span>
-<span class="token plain">  </span><span class="token literal-property property">engine</span><span
-                                class="token operator">:</span><span class="token plain"> </span><span
-                                class="token punctuation">{</span><span class="token plain"></span>
-<span class="token plain">    </span><span class="token literal-property property">cpus</span><span
-                                class="token operator">:</span><span class="token plain"> </span><span
-                                class="token number">12</span><span class="token punctuation">,</span><span
-                                class="token plain"></span>
-<span class="token plain">    </span><span class="token literal-property property">backups</span><span
-                                class="token operator">:</span><span class="token plain"> </span><span
-                                class="token punctuation">[</span><span
-                                class="token string">'./storage/cache.wtf'</span><span
-                                class="token punctuation">]</span><span class="token punctuation">,</span><span
-                                class="token plain"></span>
-<span class="token plain">  </span><span class="token punctuation">}</span><span class="token punctuation">,</span><span
-                                class="token plain"></span>
-<span class="token plain"></span><span class="token punctuation">}</span>
-</code></pre>
-                    <p>Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga
-                        eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
-                        Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora
-                        cupiditate est quod.</p>
-                    <x-alert-information></x-alert-information>
-                    <hr>
-                    <h2 id="basic-usage">Basic usage</h2>
-                    <p>Praesentium laudantium magni. Consequatur reiciendis aliquid nihil iusto ut in et. Quisquam ut et
-                        aliquid occaecati. Culpa veniam aut et voluptates amet perspiciatis. Qui exercitationem in qui.
-                        Vel qui dignissimos sit quae distinctio.</p>
-                    <h3 id="your-first-cache">Your first cache</h3>
-                    <p>Minima vel non iste debitis. Consequatur repudiandae et quod accusamus sit molestias consequatur
-                        aperiam. Et sequi ipsa eum voluptatibus ipsam. Et quisquam ut.</p>
-                    <p>Qui quae esse aspernatur fugit possimus. Quam sed molestiae temporibus. Eum perferendis
-                        dignissimos provident ea et. Et repudiandae quasi accusamus consequatur dolore nobis. Quia
-                        reiciendis necessitatibus a blanditiis iste quia. Ut quis et amet praesentium sapiente.</p>
-                    <p>Atque eos laudantium. Optio odit aspernatur consequuntur corporis soluta quidem sunt aut
-                        doloribus. Laudantium assumenda commodi.</p>
-                    <h3 id="clearing-the-cache">Clearing the cache</h3>
-                    <p>Vel aut velit sit dolor aut suscipit at veritatis voluptas. Laudantium tempore praesentium. Qui
-                        ut voluptatem.</p>
-                    <p>Ea est autem fugiat velit esse a alias earum. Dolore non amet soluta eos libero est. Consequatur
-                        qui aliquam qui odit eligendi ut impedit illo dignissimos.</p>
-                    <p>Ut dolore qui aut nam. Natus temporibus nisi voluptatum labore est ex error vel officia. Vero
-                        repellendus ut. Suscipit voluptate et placeat. Eius quo corporis ab et consequatur quisquam.
-                        Nihil officia facere dolorem occaecati alias deleniti deleniti in.</p>
-                    <h3 id="adding-middleware">Adding middleware</h3>
-                    <p>Officia nobis tempora maiores id iusto magni reprehenderit velit. Quae dolores inventore
-                        molestiae perspiciatis aut. Quis sequi officia quasi rem officiis officiis. Nesciunt ut
-                        cupiditate. Sunt aliquid explicabo enim ipsa eum recusandae. Vitae sunt eligendi et non beatae
-                        minima aut.</p>
-                    <p>Harum perferendis aut qui quibusdam tempore laboriosam voluptatum qui sed. Amet error amet totam
-                        exercitationem aut corporis accusantium dolorum. Perspiciatis aut animi et. Sed unde error ut
-                        aut rerum.</p>
-                    <p>Ut quo libero aperiam mollitia est repudiandae quaerat corrupti explicabo. Voluptas accusantium
-                        sed et doloribus voluptatem fugiat a mollitia. Numquam est magnam dolorem asperiores fugiat.
-                        Soluta et fuga amet alias temporibus quasi velit. Laudantium voluptatum perspiciatis doloribus
-                        quasi facere. Eveniet deleniti veniam et quia veritatis minus veniam perspiciatis.</p>
-                    <hr>
-                    <h2 id="getting-help">Getting help</h2>
-                    <p>Consequuntur et aut quisquam et qui consequatur eligendi. Necessitatibus dolorem sit. Excepturi
-                        cumque quibusdam soluta ullam rerum voluptatibus. Porro illo sequi consequatur nisi numquam nisi
-                        autem. Ut necessitatibus aut. Veniam ipsa voluptatem sed.</p>
-                    <h3 id="submit-an-issue">Submit an issue</h3>
-                    <p>Inventore et aut minus ut voluptatem nihil commodi doloribus consequatur. Facilis perferendis
-                        nihil sit aut aspernatur iure ut dolores et. Aspernatur odit dignissimos. Aut qui est sint
-                        sint.</p>
-                    <p>Facere aliquam qui. Dolorem officia ipsam adipisci qui molestiae. Error voluptatem reprehenderit
-                        ex.</p>
-                    <p>Consequatur enim quia maiores aperiam et ipsum dicta. Quam ut sit facere sit quae. Eligendi
-                        veritatis aut ut veritatis iste ut adipisci illo.</p>
-                    <h3 id="join-the-community">Join the community</h3>
-                    <p>Praesentium facilis iste aliquid quo quia a excepturi. Fuga reprehenderit illo sequi voluptatem
-                        voluptatem omnis. Id quia consequatur rerum consectetur eligendi et omnis. Voluptates iusto
-                        labore possimus provident praesentium id vel harum quisquam. Voluptatem provident corrupti.</p>
-                    <p>Eum et ut. Qui facilis est ipsa. Non facere quia sequi commodi autem. Dicta autem sit sequi omnis
-                        impedit. Eligendi amet dolorum magnam repudiandae in a.</p>
-                    <p>Molestiae iusto ut exercitationem dolorem unde iusto tempora atque nihil. Voluptatem velit facere
-                        laboriosam nobis ea. Consequatur rerum velit ipsum ipsam. Et qui saepe consequatur minima
-                        laborum tempore voluptatum et. Quia eveniet eaque sequi consequatur nihil eos.</p></div>
+                </div>
             </article>
             <dl class="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
                 <div class="ml-auto text-right">
