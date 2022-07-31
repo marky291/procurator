@@ -35,7 +35,7 @@ Route::view('/', 'welcome')->name('welcome');
 
 // Content...
 Route::view('/generators', 'welcome')->name('generators');
-Route::view('/generators/content', 'content')->name('generators.content');
+Route::view('/generators/content', 'welcome')->name('generators.content');
 Route::view('/generators/content#forge-sentence', 'welcome')->name('generators.content.sentence');
 Route::view('/generators/content#forge-paragraph', 'welcome')->name('generators.content.paragraph');
 Route::view('/generators/content#forge-password', 'welcome')->name('generators.content.password');
