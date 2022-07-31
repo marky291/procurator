@@ -281,21 +281,20 @@
 
                     <hr>
 
-                    <x-forge component="forge-password">
-                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
-                    </x-forge>
+{{--                    <x-forge component="forge-password">--}}
+{{--                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>--}}
+{{--                    </x-forge>--}}
+
+{{--                    <hr>--}}
+
+{{--                    <x-forge component="forge-paragraph">--}}
+{{--                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>--}}
+{{--                    </x-forge>--}}
 
                     <hr>
 
-                    <x-forge component="forge-paragraph">
-                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
-                    </x-forge>
+                    @livewire('forge-avatar')
 
-                    <hr>
-
-                    <x-forge component="forge-avatar">
-                        <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
-                    </x-forge>
                 </div>
             </article>
             <dl class="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">

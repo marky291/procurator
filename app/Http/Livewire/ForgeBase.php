@@ -10,9 +10,7 @@ abstract class ForgeBase extends Component
 {
     public string $forged;
 
-    public bool $viewImage;
-
-    protected $baseListeners = ['generate', 'generatePNG'];
+    protected $baseListeners = ['generate'];
 
     abstract public function forge(): string;
 
@@ -21,15 +19,13 @@ abstract class ForgeBase extends Component
         return array_merge($this->listeners, $this->baseListeners);
     }
 
+    // generate on page load.
     public function mount()
     {
-        if ($this->clipboardTarget() == 'forge-avatar') {
-            $this->viewImage = true;
-        }
-
         $this->forged = $this->forge();
     }
 
+    // generate on generate button click..
     public function generate()
     {
         $this->forged = $this->forge();
@@ -45,7 +41,7 @@ abstract class ForgeBase extends Component
         return 'link-' . $this->kebabedClassname();
     }
 
-    public function kebabedClassname()
+    public function kebabedClassname(): string
     {
         return Str::of(class_basename(static::class))->kebab();
     }
