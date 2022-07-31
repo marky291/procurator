@@ -8,8 +8,14 @@ class ForgeCat extends ForgeBase
 {
     private string $data;
 
+    public $customWidth;
+
+    public $customHeight;
+
     public function forge(): string
     {
+        error_log($this->customWidth);
+        error_log($this->customHeight);
         return (string) Image::make('https://cataas.com/cat?width=500')->encode('data-url');
     }
 
