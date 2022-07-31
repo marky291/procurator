@@ -10,8 +10,6 @@ abstract class ForgeBase extends Component
 {
     public string $forged;
 
-    protected $baseListeners = ['generate'];
-
     abstract public function forge(): string;
 
     protected function getListeners()

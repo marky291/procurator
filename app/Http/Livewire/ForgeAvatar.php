@@ -11,16 +11,15 @@ class ForgeAvatar extends ForgeBase
 
     public string $forged;
 
-    protected $listeners = ['generatePNG'];
-
     public function mount()
     {
+        // this isnt needed since avatar has its own view now..
         $this->viewImage = true;
 
         parent::mount();
     }
 
-    public function generatePNG()
+    public function downloadImage()
     {
         $stringValue = null;
 
