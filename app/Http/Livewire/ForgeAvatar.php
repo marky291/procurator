@@ -2,26 +2,44 @@
 
 namespace App\Http\Livewire;
 
+use Illuminate\Contracts\View\View;
 use Laravolt\Avatar\Facade as Avatar;
 
 class ForgeAvatar extends ForgeBase
 {
-    private string $data;
+    public bool $viewImage;
+
+    public string $forged;
+
+    public function mount()
+    {
+        // this isnt needed since avatar has its own view now..
+        $this->viewImage = true;
+
+        parent::mount();
+    }
+
+    public function downloadImage()
+    {
+        $stringValue = null;
+
+        $base64 = $this->forged;
+        $base64 = str_replace('data:image/png;base64,', '', $base64);
+        $base64 = str_replace(' ', '+', $base64);
+        $stringValue = base64_decode($base64);
+
+        return response()->streamDownload(function () use ($stringValue) {
+            echo $stringValue;
+        }, 'Avatar.png');
+    }
 
     public function forge(): string
     {
         return Avatar::create(fake()->name())->toBase64();
     }
 
-    public function generatePNG()
+    public function render(): View
     {
-        $base64 = $this->forged;
-        $base64 = str_replace('data:image/png;base64,', '', $base64);
-        $base64 = str_replace(' ', '+', $base64);
-        $this->data = base64_decode($base64);
-
-        return response()->streamDownload(function () {
-            echo $this->data;
-        }, 'Avatar.png');
+        return view('livewire.forge-avatar');
     }
 }

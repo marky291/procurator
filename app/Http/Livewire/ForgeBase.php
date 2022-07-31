@@ -10,34 +10,15 @@ abstract class ForgeBase extends Component
 {
     public string $forged;
 
-    public string $clipboardTarget;
-
-    public string $component;
-
-    public bool $viewImage;
-
-    public $customWidth;
-
-    public $customHeight;
-
-    protected $baseListeners = ['generate', 'generatePNG'];
-
     abstract public function forge(): string;
 
-    protected function getListeners()
-    {
-        return array_merge($this->listeners, $this->baseListeners);
-    }
-
+    // generate on page load.
     public function mount()
     {
-        if ($this->clipboardTarget == 'forge-avatar' || $this->clipboardTarget == 'forge-cat') {
-            $this->viewImage = true;
-        }
-
         $this->forged = $this->forge();
     }
 
+    // generate on generate button click..
     public function generate()
     {
         error_log($this->customWidth);
@@ -45,7 +26,17 @@ abstract class ForgeBase extends Component
         $this->forged = $this->forge();
     }
 
-    protected function componentView(): string
+    public function clipboardTarget(): string
+    {
+        return $this->kebabedClassname();
+    }
+
+    public function anchor(): string
+    {
+        return 'link-' . $this->kebabedClassname();
+    }
+
+    public function kebabedClassname(): string
     {
         return Str::of(class_basename(static::class))->kebab();
     }
