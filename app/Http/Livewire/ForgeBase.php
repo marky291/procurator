@@ -21,8 +21,6 @@ abstract class ForgeBase extends Component
     // generate on generate button click..
     public function generate()
     {
-        error_log($this->customWidth);
-        error_log($this->customHeight);
         $this->forged = $this->forge();
     }
 

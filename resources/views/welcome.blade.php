@@ -295,6 +295,10 @@
 
                     @livewire('forge-avatar')
 
+                    <hr>
+
+                    @livewire('forge-cat')
+
                 </div>
             </article>
             <dl class="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
