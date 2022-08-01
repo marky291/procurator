@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d97b0cb8682cd049a2220ec61385c92b",
+    "content-hash": "7bb313ade4cad1a8e0cc7a06632c4ce5",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -59,6 +59,156 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.7"
             },
             "time": "2022-03-14T02:02:36+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-heroicons",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-heroicons.git",
+                "reference": "a2749abc7b8eb6149ff643ffa99a3d33a2de7961"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/a2749abc7b8eb6149ff643ffa99a3d33a2de7961",
+                "reference": "a2749abc7b8eb6149ff643ffa99a3d33a2de7961",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1",
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BladeUI\\Heroicons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-heroicons",
+            "keywords": [
+                "Heroicons",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-heroicons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/1.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/caneco",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-02T11:50:13+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-icons",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-icons.git",
+                "reference": "57a7c41e1e79e38aed029d3e6ae690b04344c99e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/57a7c41e1e79e38aed029d3e6ae690b04344c99e",
+                "reference": "57a7c41e1e79e38aed029d3e6ae690b04344c99e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0|^9.0",
+                "illuminate/filesystem": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
+                "illuminate/view": "^8.0|^9.0",
+                "php": "^7.4|^8.0",
+                "symfony/console": "^5.3|^6.0",
+                "symfony/finder": "^5.3|^6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^6.0|^7.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "bin": [
+                "bin/blade-icons-generate"
+            ],
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Icons\\BladeIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "BladeUI\\Icons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of icons in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-icons",
+            "keywords": [
+                "blade",
+                "icons",
+                "laravel",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-icons/issues",
+                "source": "https://github.com/blade-ui-kit/blade-icons"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/caneco",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-05-11T12:38:11+00:00"
         },
         {
             "name": "brick/math",
