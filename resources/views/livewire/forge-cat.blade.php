@@ -21,9 +21,9 @@
                 </svg>
             </button>
             <div class="clipboard px-3 py-1 start rounded-full border border-gray-700 flex text-sm items-center justify-center text-gray-700 dark:text-gray-300">
-                <input type="number" class="rounded-md w-16 text-center ml-3 mr-3 outline-none text-white bg-slate-800" placeholder="Width" wire:model="customWidth" wire:input="generate"/>
+                <input type="number" class="rounded-md w-16 text-center ml-3 mr-3 outline-none dark:text-white dark:bg-slate-800" placeholder="Width" wire:model="customWidth" wire:input="generate"/>
                 <span> x </span>
-                <input type="number" class="rounded-md w-16 text-center ml-3 mr-3 outline-none text-white bg-slate-800" placeholder="Height" wire:model="customHeight" wire:input="generate"/>
+                <input type="number" class="rounded-md w-16 text-center ml-3 mr-3 outline-none dark:text-white dark:bg-slate-800" placeholder="Height" wire:model="customHeight" wire:input="generate"/>
             </div>
             <button class="clipboard px-3 py-1 start rounded-full border border-gray-700 flex text-sm items-center justify-center text-gray-700 dark:text-gray-300" wire:click="downloadImage">Download PNG</button>
             <button class="clipboard px-3 py-1 rounded-full border border-gray-700 flex text-sm items-center justify-center text-gray-700 dark:text-gray-300" data-clipboard-target="#{{ $this->clipboardTarget() }}">Copy Base64</button>
@@ -34,7 +34,7 @@
             <img src="{{ $forged }}" class="w-full h-96 object-cover" alt="avatar image"/>
             <textarea
                 rows="7"
-                class="p-4 bg-white dark:bg-[#0A101F]/100 border border-pink-400/10 rounded-xl text-sky-300 w-full"
+                class="p-4 bg-white dark:bg-[#0A101F]/100 border border-pink-400/10 rounded-xl dark:text-sky-300 w-full"
                 id="{{ $this->clipboardTarget() }}"
             >
              {{ $forged }}

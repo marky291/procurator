@@ -29,7 +29,7 @@
             <img src="{{ $forged }}" class="w-52" alt="avatar image"/>
             <textarea
                 rows="7"
-                class="p-4 bg-white dark:bg-[#0A101F]/100 border border-pink-400/10 rounded-xl text-sky-300 w-full"
+                class="p-4 bg-white dark:bg-[#0A101F]/100 border border-pink-400/10 rounded-xl dark:text-sky-300 w-full"
                 id="{{ $this->clipboardTarget() }}"
             >
              {{ $forged }}
