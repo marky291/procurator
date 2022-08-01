@@ -295,6 +295,10 @@
 
                     @livewire('forge-avatar')
 
+                    <hr>
+
+                    @livewire('forge-cat')
+
                 </div>
             </article>
             <dl class="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
@@ -330,6 +334,11 @@
                     <li>
                         <h3>
                             <a class="text-sky-500" href="/#link-forge-avatar">Forge Avatar</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a class="text-sky-500" href="/#link-forge-cat">Forge Cat</a>
                         </h3>
                     </li>
                 </ol>

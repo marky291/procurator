@@ -39,3 +39,5 @@ Route::view('/generators/content', 'welcome')->name('generators.content');
 Route::view('/generators/content#forge-sentence', 'welcome')->name('generators.content.sentence');
 Route::view('/generators/content#forge-paragraph', 'welcome')->name('generators.content.paragraph');
 Route::view('/generators/content#forge-password', 'welcome')->name('generators.content.password');
+Route::view('/generators/content#forge-avatar', 'welcome')->name('generators.content.avatar');
+Route::view('/generators/content#forge-cat', 'welcome')->name('generators.content.cat');
