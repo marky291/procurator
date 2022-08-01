@@ -52,6 +52,13 @@ class ForgeCat extends ForgeBase
         return (string) Image::make('https://cataas.com/cat?width=500')->encode('data-url');
     }
 
+    public function resizeImage($width, $height){
+        $this->customWidth = $width;
+        $this->customHeight = $height;
+
+        return $this->forge();
+    }
+
     public function render(): View
     {
         return view('livewire.forge-cat');
