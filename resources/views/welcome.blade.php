@@ -289,6 +289,10 @@
 
                     <hr>
 
+                    @livewire('forge-username')
+
+                    <hr>
+
                     @livewire('forge-avatar')
 
                     <hr>
@@ -325,6 +329,11 @@
                     <li>
                         <h3>
                             <a class="text-sky-500" href="/#link-forge-paragraph">Forge Paragraph</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <a class="text-sky-500" href="/#link-forge-username">Forge Username</a>
                         </h3>
                     </li>
                     <li>
