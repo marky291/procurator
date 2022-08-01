@@ -7,15 +7,10 @@ use Laravolt\Avatar\Facade as Avatar;
 
 class ForgeAvatar extends ForgeBase
 {
-    public bool $viewImage;
-
     public string $forged;
 
     public function mount()
     {
-        // this isnt needed since avatar has its own view now..
-        $this->viewImage = true;
-
         parent::mount();
     }
 

@@ -10,16 +10,13 @@ class ForgeCat extends ForgeBase
     private string $data;
 
     public string $customWidth;
-    public string $customHeight;
 
-    public bool $viewImage;
+    public string $customHeight;
 
     public string $forged;
 
     public function mount()
     {
-        // this isnt needed since avatar has its own view now..
-        $this->viewImage = true;
         $this->customWidth = "";
         $this->customHeight = "";
 
