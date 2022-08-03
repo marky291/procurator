@@ -23,16 +23,7 @@
             <button class="clipboard px-3 py-1 rounded-full border border-gray-700 flex text-sm items-center justify-center text-gray-700 dark:text-gray-300" data-clipboard-target="#{{ $this->clipboardTarget() }}">Copy Sentence</button>
         </div>
 
-        <!-- The component passed is created here while passing the clipboard target -->
-        <div>
-            <textarea
-                rows="5"
-                class="p-4 bg-white dark:bg-[#0A101F]/100 border border-pink-400/10 rounded-xl dark:text-sky-300 w-full"
-                id="{{ $this->clipboardTarget() }}"
-            >
-             {{ $forged }}
-            </textarea>
-        </div>
+        <x-forge-input :forged="$forged"/>
 
     </div>
 
