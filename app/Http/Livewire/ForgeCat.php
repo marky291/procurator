@@ -9,19 +9,9 @@ class ForgeCat extends ForgeBase
 {
     private string $data;
 
-    public string $customWidth;
+    public int $customWidth = 500;
 
-    public string $customHeight;
-
-    public string $forged;
-
-    public function mount()
-    {
-        $this->customWidth = "";
-        $this->customHeight = "";
-
-        parent::mount();
-    }
+    public int $customHeight = 334;
 
     public function downloadImage()
     {
