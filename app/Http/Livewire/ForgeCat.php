@@ -11,7 +11,7 @@ class ForgeCat extends ForgeBase
 
     public int $customWidth = 500;
 
-    public int $customHeight = 334;
+    public int $customHeight = 400;
 
     public function downloadImage()
     {
