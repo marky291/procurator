@@ -82,11 +82,11 @@
                     <div class="relative z-10 md:text-center lg:text-left"><img alt=""
                             src="{{ asset('img/bg-blur-cyan.png') }}" width="530" height="530" decoding="async"
                             data-nimg="future" class="absolute bottom-full right-full -mr-72 -mb-56 opacity-50">
-                        <div class="relative">
+                        <div class="relative py-12">
                             <p
                                 class="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                                Blacksmith</p>
-                            <p class="mt-3 text-2xl tracking-tight text-slate-400">AI-based content creation tool perfect for UI/UX design, prototyping, or testing.</p>
+                                AI Content Generation Tool</p>
+                            <p class="mt-3 text-2xl tracking-tight text-slate-400">Perfect for UI/UX design, prototyping, or testing.</p>
                         </div>
                     </div>
                     <div class="relative lg:static xl:pl-10">
@@ -163,83 +163,12 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="relative"><img alt="" src="{{ asset('img/bg-blur-cyan.png') }}"
+                        <div class="relative flex justify-center "><img alt="" src="{{ asset('img/bg-blur-cyan.png') }}"
                                 width="530" height="530" decoding="async" data-nimg="future"
                                 class="absolute -top-64 -right-64"><img alt=""
                                 src="{{ asset('img/bg-blur-indigo.png') }}" width="567" height="567"
                                 decoding="async" data-nimg="future" class="absolute -bottom-40 -right-44">
-                            <div
-                                class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10 blur-lg">
-                            </div>
-                            <div
-                                class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10">
-                            </div>
-                            <div class="relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur">
-                                <div
-                                    class="absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-sky-300/0 via-sky-300/70 to-sky-300/0">
-                                </div>
-                                <div
-                                    class="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0">
-                                </div>
-                                <div class="pl-4 pt-4">
-                                    <svg aria-hidden="true" viewBox="0 0 42 10" fill="none"
-                                        class="h-2.5 w-auto stroke-slate-500/30">
-                                        <circle cx="5" cy="5" r="4.5"></circle>
-                                        <circle cx="21" cy="5" r="4.5"></circle>
-                                        <circle cx="37" cy="5" r="4.5"></circle>
-                                    </svg>
-                                    <div class="mt-4 flex space-x-2 text-xs">
-                                        <div
-                                            class="flex h-6 rounded-full bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300">
-                                            <div class="flex items-center rounded-full px-2.5 bg-slate-800">
-                                                cache-advance.config.js
-                                            </div>
-                                        </div>
-                                        <div class="flex h-6 rounded-full text-slate-500">
-                                            <div class="flex items-center rounded-full px-2.5">package.json</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-6 flex items-start px-1 text-sm">
-                                        <div aria-hidden="true"
-                                            class="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600">
-                                            01<br>02<br>03<br>04<br>05<br>06<br>07<br></div>
-                                        <pre class="prism-code language-javascript flex overflow-x-auto pb-6"><code
-                                            class="px-4"><div class="token-line"><span class="token keyword module">export</span><span
-                                                    class="token plain"> </span><span class="token keyword module">default</span><span
-                                                    class="token plain"> </span><span class="token punctuation">{</span><span
-                                                    class="token plain"></span></div><div class="token-line"><span
-                                                    class="token plain">  </span><span
-                                                    class="token literal-property property">strategy</span><span
-                                                    class="token operator">:</span><span
-                                                    class="token plain"> </span><span
-                                                    class="token string">'predictive'</span><span
-                                                    class="token punctuation">,</span><span class="token plain"></span></div><div
-                                                class="token-line"><span class="token plain">  </span><span
-                                                    class="token literal-property property">engine</span><span
-                                                    class="token operator">:</span><span
-                                                    class="token plain"> </span><span class="token punctuation">{</span><span
-                                                    class="token plain"></span></div><div class="token-line"><span
-                                                    class="token plain">    </span><span
-                                                    class="token literal-property property">cpus</span><span
-                                                    class="token operator">:</span><span
-                                                    class="token plain"> </span><span
-                                                    class="token number">12</span><span
-                                                    class="token punctuation">,</span><span class="token plain"></span></div><div
-                                                class="token-line"><span class="token plain">    </span><span
-                                                    class="token literal-property property">backups</span><span
-                                                    class="token operator">:</span><span
-                                                    class="token plain"> </span><span class="token punctuation">[</span><span
-                                                    class="token string">'./storage/cache.wtf'</span><span
-                                                    class="token punctuation">]</span><span
-                                                    class="token punctuation">,</span><span class="token plain"></span></div><div
-                                                class="token-line"><span class="token plain">  </span><span
-                                                    class="token punctuation">}</span><span
-                                                    class="token punctuation">,</span><span class="token plain"></span></div><div
-                                                class="token-line"><span class="token plain"></span><span
-                                                    class="token punctuation">}</span></div></code></pre>
-                                    </div>
-                                </div>
-                            </div>
+{{--                            <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none"> <path d="M600 2675 c0 -4 6 -18 14 -34 8 -15 49 -119 91 -232 l77 -204 164 -165 163 -166 3 99 3 100 99 -157 c54 -86 101 -155 103 -152 3 2 -11 44 -30 93 -19 48 -72 192 -117 318 -45 127 -84 237 -87 245 -3 8 -15 -43 -26 -115 -11 -71 -22 -132 -24 -134 -2 -3 -10 4 -17 15 -8 11 -89 110 -181 219 -92 110 -179 217 -194 237 -23 34 -41 48 -41 33z m267 -369 c59 -71 120 -138 135 -150 27 -19 28 -19 48 -1 11 10 24 31 28 47 4 16 12 29 17 30 8 0 62 -130 64 -155 1 -4 -8 -3 -20 3 -27 15 -55 -9 -65 -54 -3 -17 -9 -35 -11 -40 -8 -12 -222 203 -244 247 -18 35 -79 192 -79 204 0 16 31 -16 127 -131z"/> <path d="M2194 2376 c-26 -20 -6 -43 24 -27 18 10 32 6 32 -10 0 -4 -11 -10 -25 -13 -25 -6 -25 -7 -10 -42 17 -41 19 -54 7 -54 -5 0 -14 18 -21 40 -12 40 -12 40 -37 24 -22 -15 -24 -21 -18 -60 4 -30 3 -44 -5 -44 -6 0 -11 15 -11 33 0 42 -6 48 -36 35 -28 -13 -30 -25 -7 -50 9 -10 13 -21 9 -26 -5 -4 -16 4 -25 18 -35 52 -64 80 -83 80 -14 0 -18 -5 -14 -16 3 -9 6 -17 6 -19 0 -2 8 -1 19 2 24 6 39 -17 18 -29 -13 -7 -14 -14 -6 -35 5 -14 7 -28 4 -31 -7 -7 -9 -4 -32 53 -14 36 -25 50 -39 50 -27 0 -24 -29 4 -33 27 -4 28 -13 2 -30 -15 -9 -20 -23 -20 -52 0 -22 -4 -40 -10 -40 -5 0 -9 30 -9 66 1 36 -1 68 -4 70 -2 2 -25 -5 -51 -17 -67 -29 -51 -56 22 -34 16 6 22 3 22 -9 0 -9 -3 -16 -7 -16 -5 0 -19 -9 -31 -18 -23 -18 -23 -20 -8 -55 8 -20 12 -37 7 -37 -10 0 -37 57 -45 97 -4 18 -11 35 -15 38 -10 5 -165 -86 -196 -115 -22 -21 -45 -26 -45 -11 0 17 -60 144 -66 138 -3 -3 7 -28 21 -57 33 -64 28 -76 -5 -14 -23 43 -27 45 -59 40 -41 -6 -80 -31 -89 -57 -7 -17 -9 -16 -19 12 -7 17 -10 29 -7 26 3 -3 29 6 57 19 29 13 61 24 72 24 18 0 18 1 3 16 -15 16 -21 15 -73 -6 -30 -12 -60 -30 -65 -40 -5 -10 -5 -50 1 -101 6 -46 11 -97 13 -114 4 -47 29 -85 108 -168 50 -53 80 -77 96 -77 44 0 132 58 132 87 0 7 -14 42 -32 77 -18 36 -30 67 -27 69 2 2 47 18 99 36 52 18 174 70 270 115 96 46 205 97 243 114 63 29 67 33 67 64 0 34 -30 94 -58 116 -20 15 -24 15 -48 -2z m-386 -238 c-2 -7 -40 -31 -85 -53 -44 -22 -93 -48 -107 -58 -15 -10 -33 -16 -39 -14 -14 4 46 44 148 99 76 41 89 45 83 26z m-321 -44 c59 -78 86 -104 103 -104 10 0 57 18 105 40 88 40 115 48 115 31 0 -14 -15 -22 -110 -56 -108 -39 -124 -60 -96 -132 30 -75 27 -93 -17 -116 l-39 -20 -65 64 c-77 77 -82 84 -99 168 -19 90 -18 98 15 132 38 38 54 37 88 -7z"/> <path d="M2138 2353 c-19 -5 -24 -28 -9 -37 4 -3 17 1 27 9 22 16 10 34 -18 28z"/> <path d="M2052 2312 c-37 -18 -37 -39 -1 -34 13 2 34 4 47 5 23 2 26 6 16 31 -8 20 -20 19 -62 -2z"/> <path d="M890 1975 c0 -3 18 -41 40 -85 22 -44 37 -80 33 -80 -5 0 -48 13 -98 29 -261 85 -395 118 -323 80 12 -6 79 -52 148 -100 115 -80 132 -89 194 -99 38 -6 107 -20 153 -30 46 -11 86 -20 89 -20 3 0 -16 25 -42 55 -26 31 -45 57 -42 60 2 2 49 -14 103 -36 55 -21 103 -38 108 -36 5 1 -42 38 -105 82 -62 43 -146 103 -185 132 -40 29 -73 51 -73 48z m138 -148 c7 -8 7 -18 2 -27 -6 -8 -10 -25 -10 -37 0 -27 -1 -27 -104 -7 -73 15 -154 49 -143 61 3 2 44 -6 92 -19 l88 -23 26 33 c29 36 34 38 49 19z"/> <path d="M1545 1610 c-296 -4 -364 -8 -382 -20 -13 -8 -23 -18 -23 -23 0 -7 57 -3 139 9 32 5 33 4 27 -19 -4 -18 -1 -27 10 -31 8 -3 12 -11 9 -16 -5 -8 -15 -6 -31 4 -13 9 -45 16 -72 16 -78 0 -82 -9 -82 -188 0 -95 -4 -152 -10 -152 -6 0 -10 56 -10 148 l0 147 -65 0 c-35 -1 -67 -4 -70 -7 -4 -3 -3 -50 1 -104 8 -105 22 -106 23 -3 1 62 15 83 53 77 22 -3 23 -6 26 -120 l3 -118 -25 0 c-14 0 -43 6 -63 14 -21 8 -92 24 -158 36 -130 23 -260 59 -342 96 -59 25 -147 83 -139 91 7 7 152 -25 184 -40 20 -10 73 -14 200 -14 95 0 175 -3 179 -6 3 -3 9 -27 14 -54 14 -75 24 -68 24 18 l0 79 -45 0 c-76 1 -224 11 -229 16 -3 2 -11 -6 -18 -18 l-13 -23 -6 24 -7 24 -18 -24 -19 -24 0 23 c0 26 -15 29 -29 5 -10 -17 -11 -16 -17 4 -5 17 -16 23 -57 28 -84 11 -255 53 -285 70 l-27 16 30 -5 c207 -38 349 -56 493 -63 201 -10 252 -7 252 13 0 8 7 17 15 20 34 13 10 19 -82 19 -54 0 -240 8 -412 18 -196 10 -318 14 -324 8 -5 -5 -7 -16 -5 -23 8 -20 224 -168 306 -209 83 -42 250 -90 402 -115 58 -10 108 -22 111 -27 4 -5 35 -12 69 -16 39 -5 67 -14 75 -24 6 -9 37 -20 71 -26 84 -13 111 -26 133 -62 28 -47 35 -101 21 -176 -12 -64 -16 -70 -93 -147 -77 -77 -79 -81 -53 -84 17 -2 37 5 54 20 15 13 45 32 65 43 39 20 48 35 22 35 -19 0 -20 -3 16 77 27 61 30 76 27 145 -5 113 -43 157 -164 187 -51 12 -68 21 -65 31 3 8 7 75 10 148 7 153 9 156 89 147 29 -3 61 -1 72 5 12 7 229 9 632 8 l613 -3 -120 -43 c-216 -79 -440 -204 -512 -286 -38 -42 -48 -95 -40 -205 3 -51 13 -95 31 -135 14 -32 26 -60 26 -62 0 -2 -18 3 -39 11 -22 7 -61 16 -88 20 -47 6 -47 6 32 -28 44 -18 102 -48 129 -65 50 -32 96 -42 96 -21 0 6 -27 37 -59 68 -46 45 -62 68 -75 111 -16 55 -20 201 -7 250 8 30 109 108 215 168 160 89 374 167 570 206 43 9 79 16 81 16 1 0 5 12 8 28 4 20 -1 34 -21 55 l-26 27 -414 0 c-373 0 -417 -2 -443 -17 -16 -10 -29 -21 -29 -25 0 -4 203 -6 450 -5 248 1 450 -1 450 -4 0 -16 -139 -19 -777 -19 -543 0 -684 3 -680 13 3 9 65 12 263 13 232 0 262 2 287 18 15 10 27 22 27 27 0 5 -1 8 -2 7 -2 -1 -165 -5 -363 -8z"/> <path d="M1017 1532 c-10 -10 -17 -22 -17 -25 0 -4 26 -7 59 -7 50 0 59 3 64 19 7 27 0 31 -48 31 -28 0 -47 -6 -58 -18z"/> <path d="M1984 842 c29 -56 112 -136 188 -181 l53 -31 -77 0 c-76 0 -78 1 -170 56 -74 46 -164 84 -198 84 -3 0 24 -16 59 -36 36 -20 98 -59 140 -87 67 -45 84 -51 141 -56 52 -5 65 -10 68 -24 10 -50 -48 -59 -169 -28 -211 55 -491 55 -751 0 -121 -26 -153 -23 -153 11 0 23 4 25 61 30 34 3 70 12 80 20 60 46 124 103 124 110 0 16 -36 -2 -95 -46 -58 -43 -62 -44 -132 -44 -40 0 -73 2 -73 4 0 2 24 18 53 34 80 46 223 199 204 218 -3 3 -21 -6 -42 -20 -20 -14 -52 -28 -71 -32 -28 -5 -37 -14 -52 -48 -11 -23 -40 -67 -65 -99 -47 -57 -47 -57 -41 -114 4 -32 11 -64 17 -70 14 -19 100 -16 192 6 200 47 538 52 692 9 43 -12 115 -23 160 -26 95 -4 96 -3 105 97 5 50 3 57 -22 80 -39 36 -100 129 -100 152 0 10 -6 19 -14 19 -7 0 -40 13 -72 30 -32 16 -60 30 -62 30 -1 0 9 -22 22 -48z"/> <path d="M1426 787 c-28 -20 -17 -52 18 -52 36 0 56 26 37 49 -16 19 -31 20 -55 3z m54 -16 c0 -10 -25 -21 -48 -21 -15 1 -14 3 2 15 22 17 46 20 46 6z"/> </g> </svg>--}}
                         </div>
                     </div>
                 </div>
