@@ -85,14 +85,8 @@
                         <div class="relative">
                             <p
                                 class="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                                Blacksmith. By Alex & Mark</p>
-                            <p class="mt-3 text-2xl tracking-tight text-slate-400">Cache every single thing your app
-                                could
-                                ever do ahead of time, so your code never even has to run at all.</p>
-                            <div class="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                                <x-button-primary url="/">Get started</x-button-primary>
-                                <x-button-secondary url="/">View on GitHub</x-button-secondary>
-                            </div>
+                                Blacksmith</p>
+                            <p class="mt-3 text-2xl tracking-tight text-slate-400">AI-based content creation tool perfect for UI/UX design, prototyping, or testing.</p>
                         </div>
                     </div>
                     <div class="relative lg:static xl:pl-10">

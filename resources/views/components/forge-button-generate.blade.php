@@ -2,7 +2,7 @@
 
 <button
     class="rounded-lg flex items-center bg-slate-800  px-3 text-xs font-medium text-white hover:bg-slate-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-slate-400"
-    wire:click="{{ $click }}">{{ $slot }}
+    wire:click="generate">{{ $slot }}
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32" fill="none" stroke="currentColor" stroke-width="2"
          stroke-linejoin="round" class="w-4 h-4 ml-2">
