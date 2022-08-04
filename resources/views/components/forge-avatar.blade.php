@@ -1,6 +1,8 @@
 @props(['altText' => ''])
 
-<img src="{{ $this->forged }}" class="w-52" alt="{{ $altText }}"/>
+<div class="max-h-[100%] max-w-[100%] flex flex-col justify-center items-center">
+    <img src="{{ $this->forged }}" class="" alt="{{ $altText }}"/>
+</div>
 
 <textarea
     rows="7"

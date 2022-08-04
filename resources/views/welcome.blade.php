@@ -259,16 +259,43 @@
                                 <h2 class="font-display font-medium text-slate-900 dark:text-white">Generator</h2>
                                 <ul role="list"
                                     class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
-                                    <li class="relative"><a
-                                            class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
-                                            href="/">Content</a></li>
+                                    <li class="relative">
+                                        <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+                                            href="/#content">Content</a>
+                                    </li>
+                                    <ul role="list"class="ml-4 mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
+                                        <li class="relative">
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+                                                href="/#link-forge-sentence">Forge Sentence</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+                                                href="/#link-forge-password">Forge Password</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+                                                href="/#link-forge-paragraph">Forge Paragraph</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+                                                href="/#link-forge-username">Forge Username</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+                                                href="/#link-forge-avatar">Forge Avatar</a>
+                                        </li>
+                                        <li class="relative">
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-sky-500 before:bg-sky-500"
+                                                href="/#link-forge-cat">Forge Cat</a>
+                                        </li>
+                                    </ul>
                                 </ul>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+            <div id="content" class="custom-prose prose prose-slate dark:prose-invert dark:text-slate-400 prose-headings:scroll-mt-28 prose-headings:font-display prose-headings:font-normal lg:prose-headings:scroll-mt-[8.5rem] prose-lead:text-slate-500 dark:prose-lead:text-slate-400 prose-a:font-semibold dark:prose-a:text-sky-400 prose-a:no-underline prose-a:shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,4px)+2px))_0_0_var(--tw-prose-underline,theme(colors.sky.300))] hover:prose-a:[--tw-prose-underline-size:6px] dark:[--tw-prose-background:theme(colors.slate.900)] dark:prose-a:shadow-[inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.sky.800))] dark:hover:prose-a:[--tw-prose-underline-size:6px] prose-pre:rounded-xl prose-pre:bg-slate-900 prose-pre:shadow-lg dark:prose-pre:bg-slate-800/60 dark:prose-pre:shadow-none dark:prose-pre:ring-1 dark:prose-pre:ring-slate-300/10 dark:prose-hr:border-slate-800 min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
                 <article>
                     <header class="mb-9 space-y-1">
                         <p class="font-display text-sm font-medium text-sky-500">Basics</p>
@@ -314,46 +341,6 @@
                             </a></dd>
                     </div>
                 </dl>
-            </div>
-            <div
-                class="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
-                <nav aria-labelledby="on-this-page-title" class="w-56">
-                    <h2 id="on-this-page-title"
-                        class="font-display text-sm font-medium text-slate-900 dark:text-white">
-                        On this page</h2>
-                    <ol role="list" class="mt-4 space-y-3 text-sm">
-                        <li>
-                            <h3>
-                                <a class="text-sky-500" href="/#link-forge-sentence">Forge Sentence</a>
-                            </h3>
-                        </li>
-                        <li>
-                            <h3>
-                                <a class="text-sky-500" href="/#link-forge-password">Forge Password</a>
-                            </h3>
-                        </li>
-                        <li>
-                            <h3>
-                                <a class="text-sky-500" href="/#link-forge-paragraph">Forge Paragraph</a>
-                            </h3>
-                        </li>
-                        <li>
-                            <h3>
-                                <a class="text-sky-500" href="/#link-forge-username">Forge Username</a>
-                            </h3>
-                        </li>
-                        <li>
-                            <h3>
-                                <a class="text-sky-500" href="/#link-forge-avatar">Forge Avatar</a>
-                            </h3>
-                        </li>
-                        <li>
-                            <h3>
-                                <a class="text-sky-500" href="/#link-forge-cat">Forge Cat</a>
-                            </h3>
-                        </li>
-                    </ol>
-                </nav>
             </div>
         </div>
     </div>
