@@ -1,5 +1,5 @@
 <x-forge>
-    <x-forge-heading>Avatar</x-forge-heading>
+    <x-forge-heading>Avatar Initials</x-forge-heading>
     <x-forge-container>
         <x-forge-header>
             <x-forge-button-generate>Generate</x-forge-button-generate>

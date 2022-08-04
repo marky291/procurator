@@ -1,5 +1,5 @@
 <x-forge>
-    <x-forge-heading>Cat</x-forge-heading>
+    <x-forge-heading>Cat Image</x-forge-heading>
     <x-forge-container>
         <x-forge-header>
             <x-forge-button-generate>Generate</x-forge-button-generate>
