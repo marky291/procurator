@@ -31,7 +31,7 @@ abstract class ForgeBase extends Component
 
     public function anchor(): string
     {
-        return 'link-' . $this->kebabedClassname();
+        return 'link-'.$this->kebabedClassname();
     }
 
     public function kebabedClassname(): string

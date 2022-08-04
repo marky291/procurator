@@ -2,8 +2,8 @@
 
 namespace App\Http\Livewire;
 
-use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Contracts\View\View;
+use Intervention\Image\ImageManagerStatic as Image;
 
 class ForgeCat extends ForgeBase
 {
@@ -27,19 +27,19 @@ class ForgeCat extends ForgeBase
 
     public function forge(): string
     {
-        if($this->customWidth && $this->customHeight){
-            return (string) Image::make('https://cataas.com/cat?width=' . $this->customWidth . '&height=' . $this->customHeight)->encode('data-url');
+        if ($this->customWidth && $this->customHeight) {
+            return (string) Image::make('https://cataas.com/cat?width='.$this->customWidth.'&height='.$this->customHeight)->encode('data-url');
+        } elseif ($this->customWidth) {
+            return (string) Image::make('https://cataas.com/cat?width='.$this->customWidth)->encode('data-url');
+        } elseif ($this->customHeight) {
+            return (string) Image::make('https://cataas.com/cat?height='.$this->customHeight)->encode('data-url');
         }
-        else if($this->customWidth){
-            return (string) Image::make('https://cataas.com/cat?width=' . $this->customWidth)->encode('data-url');
-        }
-        else if($this->customHeight){
-            return (string) Image::make('https://cataas.com/cat?height=' . $this->customHeight)->encode('data-url');
-        }
+
         return (string) Image::make('https://cataas.com/cat?width=500')->encode('data-url');
     }
 
-    public function resizeImage($width, $height){
+    public function resizeImage($width, $height)
+    {
         $this->customWidth = $width;
         $this->customHeight = $height;
 
