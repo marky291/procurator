@@ -14,6 +14,10 @@ class ForgeAvatar extends ForgeBase
         parent::mount();
     }
 
+    public function copyAvatarImage(){
+        $this->emit('avatarImagedCopied', $this->forged);
+    }
+
     public function downloadImage()
     {
         $stringValue = null;
