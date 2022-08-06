@@ -10,6 +10,8 @@ class Search extends Component
 {
     public bool $showSearchModal = false;
 
+    public bool $aria = false;
+
     public Collection $routes;
 
     public Collection $results;
@@ -35,16 +37,6 @@ class Search extends Component
         $this->results = $this->routes->filter(function ($route) {
             return Str::of($route['name'])->lower()->is(strtolower("*{$this->query}*"));
         });
-    }
-
-    public function showSearch()
-    {
-        $this->showSearchModal = true;
-    }
-
-    public function closeSearchModal()
-    {
-        $this->showSearchModal = false;
     }
 
     public function search()

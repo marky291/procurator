@@ -2,6 +2,8 @@
     {
         "name": "Generate Sentence",
         "tags": [
+            { "name": "test" },
+            { "name": "test2" }
         ],
         "desc": "Generate a random sentence.",
         "url": "#link-forge-sentence"
