@@ -13,6 +13,10 @@ class ForgeCat extends ForgeBase
 
     public int $customHeight = 400;
 
+    public function copyCatImage(){
+        $this->emit('catImagedCopied', $this->forged);
+    }
+
     public function downloadImage()
     {
         $base64 = $this->forged;
