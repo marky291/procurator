@@ -1,5 +1,5 @@
-<div class="-my-5 mr-6 sm:mr-8 md:mr-0">
-    <button type="button" wire:click="$toggle('showSearchModal')"
+<div x-data="{ showSearchModal: false }" class="-my-5 mr-6 sm:mr-8 md:mr-0">
+    <button @click="showSearchModal = ! showSearchModal" type="button"
             class="group flex h-6 w-6 items-center justify-center sm:justify-start md:h-auto md:w-80 md:flex-none md:rounded-lg md:py-2.5 md:pl-4 md:pr-3.5 md:text-sm md:ring-1 md:ring-slate-200 md:hover:ring-slate-300 dark:md:bg-slate-800/75 dark:md:ring-inset dark:md:ring-white/5 dark:md:hover:bg-slate-700/40 dark:md:hover:ring-slate-500 lg:w-96">
         <svg aria-hidden="true" viewBox="0 0 20 20"
              class="h-5 w-5 flex-none fill-slate-400 group-hover:fill-slate-500 dark:fill-slate-500 md:group-hover:fill-slate-400">
@@ -12,82 +12,82 @@
         </kbd>
     </button>
 
-    @if($showSearchModal){
-        <div role="button" aria-expanded="true" aria-haspopup="listbox" aria-labelledby="docsearch-label" wire:keydown.escape="$toggle('showSearchModal')"
-            class="DocSearch DocSearch-Container" tabindex="0">
-            <div class="DocSearch-Modal" style="--docsearch-vh:9.37px;">
+    <div x-show="showSearchModal">
+        <div role="button" aria-expanded="true" aria-haspopup="listbox" aria-labelledby="docsearch-label"
+             class="DocSearch DocSearch-Container" tabindex="0">
+            <div class="DocSearch-Modal" @click.outside="showSearchModal = false" style="--docsearch-vh:9.37px;">
                 <header class="DocSearch-SearchBar">
                     <form class="DocSearch-Form"><label class="DocSearch-MagnifierLabel" for="docsearch-input"
-                            id="docsearch-label"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20">
+                                                        id="docsearch-label"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20">
                                 <path
                                     d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
                                     stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
                                     stroke-linejoin="round"></path>
                             </svg></label>
                         <div class="DocSearch-LoadingIndicator"><svg viewBox="0 0 38 38" stroke="currentColor"
-                                stroke-opacity=".5">
+                                                                     stroke-opacity=".5">
                                 <g fill="none" fill-rule="evenodd">
                                     <g transform="translate(1 1)" stroke-width="2">
                                         <circle stroke-opacity=".3" cx="18" cy="18" r="18"></circle>
                                         <path d="M36 18c0-9.94-8.06-18-18-18">
                                             <animateTransform attributeName="transform" type="rotate" from="0 18 18"
-                                                to="360 18 18" dur="1s" repeatCount="indefinite"></animateTransform>
+                                                              to="360 18 18" dur="1s" repeatCount="indefinite"></animateTransform>
                                         </path>
                                     </g>
                                 </g>
                             </svg></div><input class="DocSearch-Input" aria-autocomplete="both" wire:model="query"
-                            aria-labelledby="docsearch-label" id="docsearch-input" autocomplete="off" autocorrect="off"
-                            autocapitalize="off" enterkeyhint="search" spellcheck="false" placeholder="Search docs"
-                            maxlength="64" type="search" value=""><button type="reset" title="Clear the query"
-                            class="DocSearch-Reset" aria-label="Clear the query" hidden=""><svg width="20" height="20"
-                                viewBox="0 0 20 20">
+                                               aria-labelledby="docsearch-label" id="docsearch-input" autocomplete="off" autocorrect="off"
+                                               autocapitalize="off" enterkeyhint="search" spellcheck="false" placeholder="Search docs"
+                                               maxlength="64" type="search" value=""><button type="reset" title="Clear the query"
+                                                                                             class="DocSearch-Reset" aria-label="Clear the query" hidden=""><svg width="20" height="20"
+                                                                                                                                                                 viewBox="0 0 20 20">
                                 <path d="M10 10l5.09-5.09L10 10l5.09 5.09L10 10zm0 0L4.91 4.91 10 10l-5.09 5.09L10 10z"
-                                    stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
+                                      stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                      stroke-linejoin="round"></path>
                             </svg></button>
-                    </form><button class="DocSearch-Cancel" type="reset" aria-label="Cancel" wire:click="$toggle('showSearchModal')">Cancel</button>
+                    </form><button class="DocSearch-Cancel" type="reset" aria-label="Cancel" @click="showSearchModal = false">Cancel</button>
                 </header>
                 <div class="DocSearch-Dropdown">
                     <div class="DocSearch-Dropdown-Container">
                         @if($query)
                             @if (count($results))
-                            <div class="DocSearch-Hit-source">Xanlax Crawler</div>
+                                <div class="DocSearch-Hit-source">Xanlax Crawler</div>
                                 @foreach($results as $testUrl)
                                     <section class="DocSearch-Hits">
-                                            <ul role="listbox" aria-labelledby="docsearch-label" id="docsearch-list">
-                                                <li class="DocSearch-Hit" id="docsearch-item-0" role="option" wire:mouseover="$toggle('aria')" aria-selected="{{ $aria ? "true" : "false" }}"><a
-                                                        href="https://docsearch.algolia.com/docs/templates/">
-                                                        <div class="DocSearch-Hit-Container">
-                                                            <div class="DocSearch-Hit-icon"><svg width="20" height="20" viewBox="0 0 20 20">
-                                                                    <path
-                                                                        d="M17 6v12c0 .52-.2 1-1 1H4c-.7 0-1-.33-1-1V2c0-.55.42-1 1-1h8l5 5zM14 8h-3.13c-.51 0-.87-.34-.87-.87V4"
-                                                                        stroke="currentColor" fill="none" fill-rule="evenodd"
-                                                                        stroke-linejoin="round"></path>
-                                                                </svg></div>
-                                                            <div class="DocSearch-Hit-content-wrapper">
-                                                                <div class="pl-4 pb-3">
-                                                                    @if(!@empty($testUrl["tags"]))
-                                                                        @foreach($testUrl["tags"] as $urlTag)
-                                                                            <button class="rounded-xl px-2 flex-1 text-[12px] font-semibold text-gray-400 bg-slate-700" aria-label="tag name">{{ $urlTag["name"] }}</button>
-                                                                        @endforeach
-                                                                    @endempty
-                                                                </div>
-                                                                <h1 class="DocSearch-Hit-title">{{ $testUrl["name"] }}</h1>
-                                                                <div>
-                                                                    <h2 class="DocSearch-Hit-title text-gray-400">{{ $testUrl["desc"] }}</h2>
-                                                                </div>
+                                        <ul role="listbox" aria-labelledby="docsearch-label" id="docsearch-list">
+                                            <li class="DocSearch-Hit" id="docsearch-item-0" role="option" wire:mouseover="$toggle('aria')" aria-selected="{{ $aria ? "true" : "false" }}"><a
+                                                    href="https://docsearch.algolia.com/docs/templates/">
+                                                    <div class="DocSearch-Hit-Container">
+                                                        <div class="DocSearch-Hit-icon"><svg width="20" height="20" viewBox="0 0 20 20">
+                                                                <path
+                                                                    d="M17 6v12c0 .52-.2 1-1 1H4c-.7 0-1-.33-1-1V2c0-.55.42-1 1-1h8l5 5zM14 8h-3.13c-.51 0-.87-.34-.87-.87V4"
+                                                                    stroke="currentColor" fill="none" fill-rule="evenodd"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg></div>
+                                                        <div class="DocSearch-Hit-content-wrapper">
+                                                            <div class="pl-4 pb-3">
+                                                                @if(!@empty($testUrl["tags"]))
+                                                                    @foreach($testUrl["tags"] as $urlTag)
+                                                                        <button class="rounded-xl px-2 flex-1 text-[12px] font-semibold text-gray-400 bg-slate-700" aria-label="tag name">{{ $urlTag["name"] }}</button>
+                                                                    @endforeach
+                                                                @endempty
                                                             </div>
-                                                            <div class="DocSearch-Hit-action"><svg class="DocSearch-Hit-Select-Icon" width="20"
-                                                                    height="20" viewBox="0 0 20 20">
-                                                                    <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                                                                        stroke-linejoin="round">
-                                                                        <path d="M18 3v4c0 2-2 4-4 4H2"></path>
-                                                                        <path d="M8 17l-6-6 6-6"></path>
-                                                                    </g>
-                                                                </svg></div>
+                                                            <h1 class="DocSearch-Hit-title">{{ $testUrl["name"] }}</h1>
+                                                            <div>
+                                                                <h2 class="DocSearch-Hit-title text-gray-400">{{ $testUrl["desc"] }}</h2>
+                                                            </div>
                                                         </div>
-                                                    </a></li>
-                                            </ul>
+                                                        <div class="DocSearch-Hit-action"><svg class="DocSearch-Hit-Select-Icon" width="20"
+                                                                                               height="20" viewBox="0 0 20 20">
+                                                                <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                                                   stroke-linejoin="round">
+                                                                    <path d="M18 3v4c0 2-2 4-4 4H2"></path>
+                                                                    <path d="M8 17l-6-6 6-6"></path>
+                                                                </g>
+                                                            </svg></div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
                                     </section>
                                 @endforeach
                             @else
@@ -110,25 +110,25 @@
                     <ul class="DocSearch-Commands">
                         <li><kbd class="DocSearch-Commands-Key"><svg width="15" height="15" aria-label="Enter key" role="img">
                                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.2">
+                                       stroke-width="1.2">
                                         <path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path>
                                     </g>
                                 </svg></kbd><span class="DocSearch-Label">to select</span></li>
                         <li><kbd class="DocSearch-Commands-Key"><svg width="15" height="15" aria-label="Arrow down" role="img">
                                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.2">
+                                       stroke-width="1.2">
                                         <path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path>
                                     </g>
                                 </svg></kbd><kbd class="DocSearch-Commands-Key"><svg width="15" height="15"
-                                    aria-label="Arrow up" role="img">
+                                                                                     aria-label="Arrow up" role="img">
                                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.2">
+                                       stroke-width="1.2">
                                         <path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path>
                                     </g>
                                 </svg></kbd><span class="DocSearch-Label">to navigate</span></li>
                         <li><kbd class="DocSearch-Commands-Key"><svg width="15" height="15" aria-label="Escape key" role="img">
                                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.2">
+                                       stroke-width="1.2">
                                         <path
                                             d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956">
                                         </path>
@@ -138,5 +138,5 @@
                 </footer>
             </div>
         </div>
-    @endif
+    </div>
 </div>

@@ -2,7 +2,7 @@
 <html class="antialiased [font-feature-settings:'ss01'] dark js-focus-visible" data-theme="dark"
     lang="{{ str_replace('_', '-', app()->getLocale()) }}"
     x-cloak
-    x-data="{darkMode: localStorage.getItem('dark') === 'true'}"
+    x-data="{ darkMode: localStorage.getItem('dark') === 'true'}"
     x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
     x-bind:class="{'dark': darkMode}">
 <head>

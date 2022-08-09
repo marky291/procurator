@@ -8,8 +8,6 @@ use Livewire\Component;
 
 class Search extends Component
 {
-    public bool $showSearchModal = false;
-
     public bool $aria = false;
 
     public Collection $routes;
@@ -36,24 +34,6 @@ class Search extends Component
     {
         $this->results = $this->routes->filter(function ($route) {
             return Str::of($route['name'])->lower()->is(strtolower("*{$this->query}*"));
-        });
-    }
-
-    public function search()
-    {
-        $this->results->push($this->message);
-        $this->checkMessagePresent();
-    }
-
-    public function updatedMessage()
-    {
-        $this->search();
-    }
-
-    public function checkMessagePresent()
-    {
-        $this->testUrlResult = $this->urls->filter(function ($url) {
-            return $url;
         });
     }
 
