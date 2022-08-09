@@ -90,23 +90,23 @@
                                                 href="/#link-forge-sentence">Forge Sentence</a>
                                         </li>
                                         <li class="relative">
-                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-gray-300 hover:text-sky-500 before:bg-sky-500"
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-normal text-gray-300 hover:text-sky-500 before:bg-sky-500"
                                                 href="/#link-forge-password">Forge Password</a>
                                         </li>
                                         <li class="relative">
-                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-gray-300 hover:text-sky-500 before:bg-sky-500"
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-normal text-gray-300 hover:text-sky-500 before:bg-sky-500"
                                                 href="/#link-forge-paragraph">Forge Paragraph</a>
                                         </li>
                                         <li class="relative">
-                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-gray-300 hover:text-sky-500 before:bg-sky-500"
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-normal text-gray-300 hover:text-sky-500 before:bg-sky-500"
                                                 href="/#link-forge-username">Forge Username</a>
                                         </li>
                                         <li class="relative">
-                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-gray-300 hover:text-sky-500 before:bg-sky-500"
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-normal text-gray-300 hover:text-sky-500 before:bg-sky-500"
                                                 href="/#link-forge-avatar">Forge Avatar</a>
                                         </li>
                                         <li class="relative">
-                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold text-gray-300 hover:text-sky-500 before:bg-sky-500"
+                                            <a class="block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-normal text-gray-300 hover:text-sky-500 before:bg-sky-500"
                                                 href="/#link-forge-cat">Forge Cat</a>
                                         </li>
                                     </ul>
