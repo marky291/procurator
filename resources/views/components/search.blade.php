@@ -69,7 +69,7 @@
                                     <ul role="listbox" aria-labelledby="docsearch-label" id="docsearch-list">
                                         @foreach($results as $result)
                                         <li wire:key="item-{{ $result['id'] }}" class="DocSearch-Hit hover:bg-slate-700/75 hover:text-sky-600 hover:rounded" id="docsearch-item-0" role="option">
-                                            <a href="{{ $result['url'] }}">
+                                            <a href="{{ $result['url'] }}" @click="showSearchModal = false">
                                                 <div class="DocSearch-Hit-Container">
                                                     <div class="DocSearch-Hit-icon">
                                                         <svg width="20" height="20" viewBox="0 0 20 20">
