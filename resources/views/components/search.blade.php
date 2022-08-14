@@ -41,7 +41,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <input class="DocSearch-Input" aria-autocomplete="both" wire:model.debounce.500ms="query"
+                        <input class="DocSearch-Input" aria-autocomplete="both" wire:model.debound.150ms="query"
                                aria-labelledby="docsearch-label" id="docsearch-input" autocomplete="off"
                                autocorrect="off"
                                autocapitalize="off" enterkeyhint="search" spellcheck="false" placeholder="Search docs"
@@ -65,52 +65,50 @@
                         @if($query)
                             @if (count($results))
                                 <div class="DocSearch-Hit-source">Search Results</div>
-                                @foreach($results as $testUrl)
-                                    <section class="DocSearch-Hits">
-                                        <ul role="listbox" aria-labelledby="docsearch-label" id="docsearch-list">
-                                            <li class="DocSearch-Hit" id="docsearch-item-0" role="option"
-                                                wire:mouseover="$toggle('aria')"
-                                                aria-selected="{{ $aria ? "true" : "false" }}"><a
-                                                    href="https://docsearch.algolia.com/docs/templates/">
-                                                    <div class="DocSearch-Hit-Container">
-                                                        <div class="DocSearch-Hit-icon">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20">
-                                                                <path
-                                                                    d="M17 6v12c0 .52-.2 1-1 1H4c-.7 0-1-.33-1-1V2c0-.55.42-1 1-1h8l5 5zM14 8h-3.13c-.51 0-.87-.34-.87-.87V4"
-                                                                    stroke="currentColor" fill="none"
-                                                                    fill-rule="evenodd"
-                                                                    stroke-linejoin="round"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="DocSearch-Hit-content-wrapper">
-                                                            {{--                                                            <div class="pl-4 pb-3">--}}
-                                                            {{--                                                                @if(!@empty($testUrl["tags"]))--}}
-                                                            {{--                                                                    @foreach($testUrl["tags"] as $urlTag)--}}
-                                                            {{--                                                                        <button class="rounded-xl px-2 flex-1 text-[12px] font-semibold text-gray-400 bg-slate-700" aria-label="tag name">{{ $urlTag["name"] }}</button>--}}
-                                                            {{--                                                                    @endforeach--}}
-                                                            {{--                                                                @endempty--}}
-                                                            {{--                                                            </div>--}}
-                                                            <h1 class="DocSearch-Hit-title">{{ $testUrl["name"] }}</h1>
-                                                            <div>
-                                                                <h2 class="DocSearch-Hit-title text-gray-400">{{ $testUrl["desc"] }}</h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="DocSearch-Hit-action">
-                                                            <svg class="DocSearch-Hit-Select-Icon" width="20"
-                                                                 height="20" viewBox="0 0 20 20">
-                                                                <g stroke="currentColor" fill="none" fill-rule="evenodd"
-                                                                   stroke-linecap="round"
-                                                                   stroke-linejoin="round">
-                                                                    <path d="M18 3v4c0 2-2 4-4 4H2"></path>
-                                                                    <path d="M8 17l-6-6 6-6"></path>
-                                                                </g>
-                                                            </svg>
+                                <section class="DocSearch-Hits">
+                                    <ul role="listbox" aria-labelledby="docsearch-label" id="docsearch-list">
+                                        @foreach($results as $result)
+                                        <li wire:key="item-{{ $result['id'] }}" class="DocSearch-Hit hover:bg-slate-700/75 hover:text-sky-600 hover:rounded" id="docsearch-item-0" role="option">
+                                            <a href="{{ $result['url'] }}">
+                                                <div class="DocSearch-Hit-Container">
+                                                    <div class="DocSearch-Hit-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20">
+                                                            <path
+                                                                d="M17 6v12c0 .52-.2 1-1 1H4c-.7 0-1-.33-1-1V2c0-.55.42-1 1-1h8l5 5zM14 8h-3.13c-.51 0-.87-.34-.87-.87V4"
+                                                                stroke="currentColor" fill="none"
+                                                                fill-rule="evenodd"
+                                                                stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="DocSearch-Hit-content-wrapper hover:text-sky-500">
+                                                        {{--                                                            <div class="pl-4 pb-3">--}}
+                                                        {{--                                                                @if(!@empty($testUrl["tags"]))--}}
+                                                        {{--                                                                    @foreach($testUrl["tags"] as $urlTag)--}}
+                                                        {{--                                                                        <button class="rounded-xl px-2 flex-1 text-[12px] font-semibold text-gray-400 bg-slate-700" aria-label="tag name">{{ $urlTag["name"] }}</button>--}}
+                                                        {{--                                                                    @endforeach--}}
+                                                        {{--                                                                @endempty--}}
+                                                        {{--                                                            </div>--}}
+                                                        <h1 class="DocSearch-Hit-title text-inherit">{{ $result["name"] }}</h1>
+                                                        <div>
+                                                            <h2 class="DocSearch-Hit-title text-inherit">{{ $result["desc"] }}</h2>
                                                         </div>
                                                     </div>
-                                                </a></li>
-                                        </ul>
-                                    </section>
-                                @endforeach
+                                                    <div class="DocSearch-Hit-action">
+                                                        <svg class="DocSearch-Hit-Select-Icon" width="20"
+                                                             height="20" viewBox="0 0 20 20">
+                                                            <g stroke="currentColor" fill="none" fill-rule="evenodd"
+                                                               stroke-linecap="round"
+                                                               stroke-linejoin="round">
+                                                                <path d="M18 3v4c0 2-2 4-4 4H2"></path>
+                                                                <path d="M8 17l-6-6 6-6"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        @endforeach
+                                    </ul>
+                                </section>
                             @else
                                 <div class="DocSearch-StartScreen text-[#7A889D]">No Search Results</div>
                             @endif

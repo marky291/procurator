@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Generate Sentence",
         "tags": [
             { "name": "test" },
@@ -9,6 +10,7 @@
         "url": "#link-forge-sentence"
     },
     {
+        "id": 2,
         "name": "Generate Password",
         "tags": [
         ],
@@ -16,6 +18,7 @@
         "url": "#link-forge-password"
     },
     {
+        "id": 3,
         "name": "Generate Paragraph",
         "tags": [
         ],

@@ -358,9 +358,6 @@ svg.DocSearch-Hit-Select-Icon {
     line-height: 1rem
 }
 
-.DocSearch-Hit[aria-selected=true] .DocSearch-Hit-path,.DocSearch-Hit[aria-selected=true] .DocSearch-Hit-text,.DocSearch-Hit[aria-selected=true] .DocSearch-Hit-title,.DocSearch-Hit[aria-selected=true] mark,.DocSearch-Prefill:focus,.DocSearch-Prefill:hover {
-    color: var(--docsearch-hit-active-color)
-}
 
 .DocSearch-NoResults .DocSearch-Screen-Icon {
     display: none
