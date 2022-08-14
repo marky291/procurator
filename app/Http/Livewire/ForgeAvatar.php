@@ -16,6 +16,7 @@ class ForgeAvatar extends ForgeBase
 
     public function copyAvatarImage(){
         $this->emit('avatarImagedCopied', $this->forged);
+        $this->emitTo('copy-modal', 'show', $this->kebabedClassname());
     }
 
     public function downloadImage()
