@@ -15,6 +15,7 @@ class ForgeCat extends ForgeBase
 
     public function copyCatImage(){
         $this->emit('catImagedCopied', $this->forged);
+        $this->emitTo('copy-modal', 'show', $this->kebabedClassname());
     }
 
     public function downloadImage()

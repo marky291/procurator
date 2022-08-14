@@ -157,6 +157,8 @@
     </div>
     @stack('modals')
 
+    @livewire('copy-modal')
+
     @livewireScripts
 </body>
 
