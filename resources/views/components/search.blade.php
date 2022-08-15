@@ -1,18 +1,5 @@
-<div x-data="{ showSearchModal: false }" class="-my-5 mr-6 sm:mr-8 md:mr-0">
-    <button @click="showSearchModal = ! showSearchModal" type="button"
-            class="group flex h-6 w-6 items-center justify-center sm:justify-start md:h-auto md:w-80 md:flex-none md:rounded-lg md:py-2.5 md:pl-4 md:pr-3.5 md:text-sm md:ring-1 md:ring-slate-200 md:hover:ring-slate-300 dark:md:bg-slate-800/75 dark:md:ring-inset dark:md:ring-white/5 dark:md:hover:bg-slate-700/40 dark:md:hover:ring-slate-500 lg:w-96">
-        <svg aria-hidden="true" viewBox="0 0 20 20"
-             class="h-5 w-5 flex-none fill-slate-400 group-hover:fill-slate-500 dark:fill-slate-500 md:group-hover:fill-slate-400">
-            <path
-                d="M16.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM9 14a5 5 0 0 1-5-5H2a7 7 0 0 0 7 7v-2ZM4 9a5 5 0 0 1 5-5V2a7 7 0 0 0-7 7h2Zm5-5a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7v2Zm8.707 12.293-3.757-3.757-1.414 1.414 3.757 3.757 1.414-1.414ZM14 9a4.98 4.98 0 0 1-1.464 3.536l1.414 1.414A6.98 6.98 0 0 0 16 9h-2Zm-1.464 3.536A4.98 4.98 0 0 1 9 14v2a6.98 6.98 0 0 0 4.95-2.05l-1.414-1.414Z"></path>
-        </svg>
-        <span class="sr-only md:not-sr-only md:ml-2 md:text-slate-500 md:dark:text-slate-400">Search docs</span>
-        <kbd class="ml-auto hidden font-medium text-slate-400 dark:text-slate-500 md:block">
-            <kbd class="font-sans">⌘</kbd><kbd class="font-sans">K</kbd>
-        </kbd>
-    </button>
-
-    <div x-show="showSearchModal">
+<div x-data="{ showSearchModal: false }" @search.window="showSearchModal = true; $nextTick(() => $refs.searchbar.focus())" class="-my-5 mr-6 sm:mr-8 md:mr-0">
+    <div x-cloak x-show="showSearchModal">
         <div role="button" aria-expanded="true" aria-haspopup="listbox" aria-labelledby="docsearch-label"
              class="DocSearch DocSearch-Container" wire:loading.class="DocSearch-Container--Stalled" tabindex="0">
             <div class="DocSearch-Modal" @click.outside="showSearchModal = false" style="--docsearch-vh:9.37px;">
@@ -41,8 +28,8 @@
                                 </g>
                             </svg>
                         </div>
-                        <input class="DocSearch-Input" aria-autocomplete="both" wire:model.debound.150ms="query"
-                               aria-labelledby="docsearch-label" id="docsearch-input" autocomplete="off"
+                        <input x-ref="searchbar" class="DocSearch-Input" aria-autocomplete="both" wire:model.debound="query"
+                               aria-labelledby="docsearch-label" id="docsearch-input" autofocus="autofocus" autocomplete="off"
                                autocorrect="off"
                                autocapitalize="off" enterkeyhint="search" spellcheck="false" placeholder="Search docs"
                                maxlength="64" type="search" value="">
@@ -69,7 +56,7 @@
                                     <ul role="listbox" aria-labelledby="docsearch-label" id="docsearch-list">
                                         @foreach($results as $result)
                                         <li wire:key="item-{{ $result['id'] }}" class="DocSearch-Hit hover:bg-slate-700/75 hover:text-sky-600 hover:rounded" id="docsearch-item-0" role="option">
-                                            <a href="{{ $result['url'] }}" @click="showSearchModal = false">
+                                            <a href="{{ $result['url'] }}" @click="showSearchModal = false; $wire.emit('clearSearch')">
                                                 <div class="DocSearch-Hit-Container">
                                                     <div class="DocSearch-Hit-icon">
                                                         <svg width="20" height="20" viewBox="0 0 20 20">
@@ -81,13 +68,13 @@
                                                         </svg>
                                                     </div>
                                                     <div class="DocSearch-Hit-content-wrapper hover:text-sky-500">
-                                                        {{--                                                            <div class="pl-4 pb-3">--}}
-                                                        {{--                                                                @if(!@empty($testUrl["tags"]))--}}
-                                                        {{--                                                                    @foreach($testUrl["tags"] as $urlTag)--}}
-                                                        {{--                                                                        <button class="rounded-xl px-2 flex-1 text-[12px] font-semibold text-gray-400 bg-slate-700" aria-label="tag name">{{ $urlTag["name"] }}</button>--}}
-                                                        {{--                                                                    @endforeach--}}
-                                                        {{--                                                                @endempty--}}
-                                                        {{--                                                            </div>--}}
+{{--                                                                                                                    <div class="pl-4 pb-3">--}}
+{{--                                                                                                                        @if(!@empty($testUrl["tags"]))--}}
+{{--                                                                                                                            @foreach($testUrl["tags"] as $urlTag)--}}
+{{--                                                                                                                                <button class="rounded-xl px-2 flex-1 text-[12px] font-semibold text-gray-400 bg-slate-700" aria-label="tag name">{{ $urlTag["name"] }}</button>--}}
+{{--                                                                                                                            @endforeach--}}
+{{--                                                                                                                        @endempty--}}
+{{--                                                                                                                    </div>--}}
                                                         <h1 class="DocSearch-Hit-title text-inherit">{{ $result["name"] }}</h1>
                                                         <div>
                                                             <h2 class="DocSearch-Hit-title text-inherit">{{ $result["desc"] }}</h2>
