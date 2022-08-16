@@ -1,5 +1,5 @@
-<div x-data="{ showSearchModal: false }" @search.window="showSearchModal = true; $nextTick(() => $refs.searchbar.focus())" class="-my-5 mr-6 sm:mr-8 md:mr-0">
-    <div x-cloak x-show="showSearchModal">
+<div x-cloak x-data="{ showSearchModal: false }" @search.window="showSearchModal = true; $nextTick(() => $refs.searchbar.focus())" class="-my-5 mr-6 sm:mr-8 md:mr-0">
+    <div x-show="showSearchModal">
         <div role="button" aria-expanded="true" aria-haspopup="listbox" aria-labelledby="docsearch-label"
              class="DocSearch DocSearch-Container" wire:loading.class="DocSearch-Container--Stalled" tabindex="0">
             <div class="DocSearch-Modal" @click.outside="showSearchModal = false" style="--docsearch-vh:9.37px;">

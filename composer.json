@@ -15,7 +15,7 @@
         "laravel/telescope": "^4.9",
         "laravel/tinker": "^2.7",
         "laravolt/avatar": "^4.1",
-        "livewire/livewire": "^2.5"
+        "livewire/livewire": "^2.10"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
